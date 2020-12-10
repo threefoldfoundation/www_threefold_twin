@@ -16,7 +16,7 @@
 
 <page-query>
 query ($private: Int){
-  entries: allProject (sortBy: "rank", order: DESC, filter: { private: { ne: $private }, tags: { id: {in: ["grid", "cloud"]}}}){
+  entries: allProject (sortBy: "rank", order: DESC, filter: { private: { ne: $private }, tags: { id: {in: ["digitaltwin"]}}}){
     totalCount
     edges {
       node {
@@ -39,7 +39,7 @@ query ($private: Int){
     }
   }
   
-  tags: allProjectTag (filter: { title: {in: ["grid", "cloud"]}}) {
+  tags: allProjectTag (filter: { title: {in: ["digitaltwin"]}}) {
      edges{
       node{
         id

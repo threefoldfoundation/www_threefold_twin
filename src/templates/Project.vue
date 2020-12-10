@@ -136,7 +136,7 @@
       }
     }  
 
-    tags: allProjectTag (filter: { title: {in: ["grid", "cloud"]}}) {
+    tags: allProjectTag (filter: { title: {in: ["digitaltwin"]}}) {
      edges{
       node{
         id
