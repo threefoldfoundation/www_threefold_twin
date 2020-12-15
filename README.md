@@ -1,4 +1,4 @@
-# Default starter for Threefold Tein
+# Default starter for Threefold Twin
 
 ### 1. Install dependencies
 
