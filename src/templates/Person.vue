@@ -144,7 +144,7 @@
       }
     }
 
-    projects: allProject (sortBy: "rank", order: DESC, filter: {tags: { id: {in: ["farming"]}}}){
+    projects: allProject (sortBy: "rank", order: DESC, filter: {tags: { id: {in: ["digitaltwin"]}}}){
     totalCount
     edges {
       node {

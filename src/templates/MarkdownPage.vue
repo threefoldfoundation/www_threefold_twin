@@ -14,7 +14,7 @@
       />
       <VerticalNav
         :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slides.length > 0"
+        v-if="$page.markdownPage.slides && $page.markdownPage.slides.length > 0"
       />
       <div v-html="$page.markdownPage.content"></div>
       <NewCard
@@ -23,7 +23,10 @@
         :card="card"
       />
 
-      <GetInTouch :contacts="$page.markdownPage.contactData" v-if="$page.markdownPage.contactData.length > 0"/>
+      <GetInTouch
+        :contacts="$page.markdownPage.contactData"
+        v-if="$page.markdownPage.contactData.length > 0"
+      />
     </div>
   </Layout>
 </template>
