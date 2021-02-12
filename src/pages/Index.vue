@@ -14,33 +14,33 @@
       :link="$page.markdownPage.link"
     />  -->
 
-    <SolutionsHeader
+    <!-- <SolutionsHeader
       v-if="$page.markdownPage.header"
       :header="$page.markdownPage.header"
-    />
+    /> -->
     
-    <ShowcaseProducts
+    <!-- <ShowcaseProducts
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
-    />
+    /> -->
     
-    <Comparison
+    <!-- <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
           $page.markdownPage.comparisonSecs.length > 0
         "
         :main="$page.markdownPage.comparisonMain"
         :sections="$page.markdownPage.comparisonSecs"
-    />
+    /> -->
       
-    <BrandPanel
+    <!-- <BrandPanel
         :brand="$page.markdownPage.brandPanel"
         v-if="$page.markdownPage.brandPanel"
-    />
+    /> -->
 
     <!-- <NewCard
       v-for="card in $page.markdownPage.cards"
@@ -48,10 +48,10 @@
       :card="card"
     /> -->
 
-    <logoShowcase
+    <!-- <logoShowcase
       v-if="$page.markdownPage.logos.length > 0"
       :logos="$page.markdownPage.logos"
-    />
+    /> -->
 
     <!-- <InTheNews
       v-if="$page.markdownPage.inTheNews"
@@ -64,10 +64,10 @@
     /> -->
 
     </div>
-      <g-image
+    <!-- <g-image
       v-if="$page.markdownPage.solution_image2"
       :src="$page.markdownPage.solution_image2.src"
-    />
+    /> -->
 
     <CallToAction 
       v-if="$page.markdownPage.cta" 
@@ -88,7 +88,6 @@
         button
         link
         solution_image
-        solution_image2
         header{
          title
          subtitle
