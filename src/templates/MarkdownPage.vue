@@ -23,7 +23,7 @@
         :header="$page.markdownPage.header"
       />
       
-      <g-image 
+      <g-image class="m-auto my-4" 
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />

@@ -1,6 +1,6 @@
 ---
 id: feature4
-svg: ./feature4.png
+svg: ./image_name.png
 title: Title
 ---
 

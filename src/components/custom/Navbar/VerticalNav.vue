@@ -21,7 +21,9 @@
       <div :id="slides[activeIndex]" class="hidden" style="display: block">
         <g-image
           v-if="slides[activeIndex].image"
-          :src="slides[activeIndex].image"
+          :src="
+            require(`!!assets-loader!@images/sliders/${slides[activeIndex].image}`)
+          "
           :alt="slides[activeIndex].title"
         />
         <p>{{ slides[activeIndex].excerpt }}</p>

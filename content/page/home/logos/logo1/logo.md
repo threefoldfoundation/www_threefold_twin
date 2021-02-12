@@ -1,5 +1,5 @@
 ---
 id: logo1
-image: ./logo1.png
+image: ./hpe.png
 url: ''
 ---

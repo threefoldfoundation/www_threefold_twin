@@ -1,7 +1,7 @@
 ---
 id: card3
 title: TITLE
-image: ./card3.png
+image: ./image_name.png
 button: Button
 link: '' #link for button
 order: 3

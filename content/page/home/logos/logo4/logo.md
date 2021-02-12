@@ -1,5 +1,5 @@
 ---
 id: logo4
-image: ./logo4.png
+image: ./flowgen.png
 url: ''
 ---

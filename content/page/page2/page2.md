@@ -1,7 +1,7 @@
 ---
 id: page2
 header: header
-solution_image: ./page2_image.png
+solution_image: ./image_name.png
 howItWorksMain: how_it_works
 howItWorks: [section1, section2, section3] #add as many sections you like
 featuresMain: features
