@@ -136,7 +136,7 @@
       }
     }  
 
-    tags: allProjectTag (filter: { title: {in: ["digitaltwin"]}}) {
+    tags: allProjectTag (filter: { title: {in: ["farming"]}}) {
      edges{
       node{
         id

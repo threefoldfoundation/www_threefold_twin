@@ -1,6 +1,11 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <TagFilterHeader :tags="tagTitles" :selected="title" v-if="tagTitles.length > 2"/>
+    <TagFilterHeader
+      @resetAll="resetAll"
+      :tags="tagTitles"
+      :selected="title"
+      v-if="tagTitles.length > 2"
+    />
     <div class="container sm:px-0 mx-auto overflow-x-hidden pt-12">
       <div class="mx-4 sm:mx-0">
         <h1 class="pb-0 mb-0 text-5xl font-medium capitalize">
@@ -125,14 +130,14 @@
       }
     }
 
-    allProjectTag(filter: { title: {in: ["digitaltwin"]}}){
-     edges{
-      node{
-        id
-        title
-        path
+    allProjectTag(filter: { title: {in: ["farming", "cloud", "grid", "digitaltwin"]}}){
+      edges{
+        node{
+          id
+          title
+          path
+        }
       }
-    }
     }
 
     allNewsTag{
@@ -188,7 +193,7 @@ export default {
         tags = this.$page.allBlogTag;
       }
 
-      var res = [{ title: "All", path: path }];
+      var res = [{ title: "All Tags", path: path }];
       tags.edges.forEach((edge) =>
         res.push({ title: edge.node.title, path: edge.node.path })
       );
@@ -216,8 +221,15 @@ export default {
       }
     },
   },
+
+  methods: {
+    resetAll() {
+      this.$router.push({ path: "/news" });
+    },
+  },
   mounted() {
     document.addEventListener("click", this.close);
+    console.log(this.$page.projectTag);
   },
   beforeDestroy() {
     document.removeEventListener("click", this.close);
