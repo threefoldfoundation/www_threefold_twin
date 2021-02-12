@@ -12,9 +12,9 @@
             src="/img/tf_icon_black.svg"
             alt="Company name"
             v-if="theme == 'light'"
-          />
+          /> -->
 
-          <g-image
+          <!-- <g-image
             class="h-10"
             src="/img/tf_icon_white.svg"
             alt="Company name"
