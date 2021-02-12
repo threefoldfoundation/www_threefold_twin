@@ -1,11 +1,17 @@
 ---
 id: home_header
 title: ''
-subtitle: Welcome to ThreeFold
-btn1: The Vision
+subtitle: ''
+btn1: ''
 link1: '' #link for button
-btn2: Know P2P Better
+btn2: ''
 link2: '' #link for button
 ---
 
-We are building the next generation peer-to-peer internet infrastructure. After creating a powerful and super sustainable operating system that can host all of humanity's digital needs and data in smart contracts, we are now creating a fair, equal and private Internet experience to free humanity from the tech giants that exploit our data.
+Imagine a digital world that makes it simple for all of humanity to connect, learn, participate, and exchange. A digital world that empowers us, not exploits us.
+
+<br/>
+Imagine a digital world with no marketing. A digital world where we exchange value directly with one another – without intermediaries. Where we share and access only verifiable and purposeful information.
+<br/>
+<br/>
+Imagine accessing all the applications and tools you need from a single point of entry, a single digital identity, and surfing through all of them in full privacy and with full security.

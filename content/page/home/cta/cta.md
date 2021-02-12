@@ -1,16 +1,14 @@
 ---
 id: home_cta
-title: Join the Movement!
-button: Support us by purchasing Tokens
+title: Are you ready?
+button: KNOW MORE
 link: '' #Add button link here
-button2: Spread Our Message
+button2: ''
 link2: '' #Add button link here
-button3: Joine Our Community
+button3: ''
 link3: '' #Add button link here
 image: ./bottom_cta.png
 ---
-
-Be part of a better tomorrow, today.
 
 <!-- button2: Spread our Message
 link: ''

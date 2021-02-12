@@ -14,10 +14,10 @@
       :link="$page.markdownPage.link"
     />  -->
 
-    <!-- <SolutionsHeader
+    <SolutionsHeader
       v-if="$page.markdownPage.header"
       :header="$page.markdownPage.header"
-    /> -->
+    />
     
     <!-- <ShowcaseProducts
         :main="$page.markdownPage.productsMain"
