@@ -12,7 +12,7 @@
             src="/img/tf_icon_black.svg"
             alt="Company name"
             v-if="theme == 'light'"
-          /> -->
+          />  -->
 
           <!-- <g-image
             class="h-10"
