@@ -36,7 +36,7 @@
 export default {
   computed: {
     img: function () {
-      if (this.cta.image.src)
+      if (this.cta.image && this.cta.image.src)
         return "background-image:url(" + this.cta.image.src + ")";
       return this.cta.image;
     },
