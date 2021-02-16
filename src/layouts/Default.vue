@@ -1,12 +1,15 @@
 <template>
-  <div class="container mx-auto">
-    <NavBar
+  <div class="">
+    <!-- <NavBar
       :navigation="$static.navigation"
       @setTheme="setTheme"
       :theme="this.theme"
-    />
+    /> -->
     <slot />
-    <Footer :record="$static.footer" />
+    <Footer 
+      :record="$static.footer"
+      @setTheme="setTheme"
+      :theme="this.theme" />
   </div>
 </template>
 
@@ -78,7 +81,6 @@ body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   margin: 0;
-  padding-top: 100px;
   line-height: 1.5;
 }
 

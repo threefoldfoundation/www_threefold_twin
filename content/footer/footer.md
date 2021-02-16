@@ -1,53 +1,53 @@
 ---
 id: footer
-description: BE THE INTERNET
-linkedin: 'https://www.linkedin.com/company/threefold-foundation/'
-facebook: 'https://www.facebook.com/threefold.io'
-twitter: 'https://twitter.com/threefold_io'
+description: ''
+linkedin: '#' #replace # with a link 
+facebook: '#'
+twitter: '#'
 dribbble: '#'
 instagram: '#'
-youtube: 'https://www.youtube.com/threefoldfoundation'
-github: 'https://github.com/threefoldfoundation'
-telegram: 'https://t.me/threefoldnews'
+youtube: '#'
+github: '#'
+telegram: '#'
 items:
- - title: LEARN
+ - title: ''
    links:
-    - name: 3Node
+    - name: ''
       link: '#'
-    - name: Tech
+    - name: ''
       link: '#'
-    - name: Token
+    - name: ''
       link: '#'
-    - name: Blog
-      link: '#'
-    - name: Knowledgebase
-      link: '#'
-    - name: Community
-      link: '#'
- - title: ABOUT
+    - name: ''
+      link: '#' #add as many links as you like
+ - title: ''
    links:
-    - name: Newsroom
+    - name: ''
       link: '#'
-    - name: Team
+    - name: ''
       link: '#'
-    - name: Partners
+    - name: ''
       link: '#'
-    - name: Company
-      link: '#'
- - title: SUPPORT
+    - name: ''
+      link: '#' #add as many links as you like
+ - title: ''
    links:
-    - name: FAQ
+    - name: ''
       link: '#'
-    - name: Community
+    - name: ''
       link: '#'
-    - name: Contact
+    - name: ''
       link: '#'
- - title: LEGAL
+    - name: ''
+      link: '#' #add as many links as you like
+ - title: ''
    links:
-    - name: Terms&Conditions
+    - name: ''
       link: '#'
-    - name: PrivacyPolicy
+    - name: ''
       link: '#'
-    - name: Impressum
+    - name: ''
       link: '#'
+    - name: ''
+      link: '#' #add as many links as you like
 ---
