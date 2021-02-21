@@ -147,7 +147,7 @@
          id
          title
          subtitle
-         excerpt(length: 2000)
+         excerpt
          sourceUrl
          btnTxt
          image

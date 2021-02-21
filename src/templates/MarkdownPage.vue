@@ -15,7 +15,7 @@
 
       <VerticalNav
         :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slides && $page.markdownPage.slides.length > 0"
+        v-if="$page.markdownPage.slides && $page.markdownPage.slides > 0"
       />
 
       <SolutionsHeader
@@ -36,13 +36,13 @@
       />
 
       <HowItWorks
-        v-if="$page.markdownPage.howItWorks.length > 0"
+        v-if="$page.markdownPage.howItWorks > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       />
 
       <Features
-        v-if="$page.markdownPage.features.length > 0"
+        v-if="$page.markdownPage.features > 0"
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
@@ -50,7 +50,7 @@
       <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
-          $page.markdownPage.comparisonSecs.length > 0
+          $page.markdownPage.comparisonSecs > 0
         "
         :main="$page.markdownPage.comparisonMain"
         :sections="$page.markdownPage.comparisonSecs"
@@ -61,28 +61,28 @@
         :products="$page.markdownPage.productData"
         v-if="
           $page.markdownPage.productData &&
-          $page.markdownPage.productData.length > 0
+          $page.markdownPage.productData > 0
         "
       />
 
       <Roadmap
-        v-if="$page.markdownPage.roadmap.length > 0"
+        v-if="$page.markdownPage.roadmap > 0"
         :roadmap="$page.markdownPage.roadmap"
       />
 
       <FourTiersWithToggle
-        v-if="$page.markdownPage.pricingPlans.length > 0"
+        v-if="$page.markdownPage.pricingPlans > 0"
         :main="$page.markdownPage.pricing_plansMain"
         :pricingPlans="$page.markdownPage.pricingPlans"
       />
 
       <WithComparisonTable
-        v-if="$page.markdownPage.plans.length > 0"
+        v-if="$page.markdownPage.plans > 0"
         :plans="$page.markdownPage.plans"
       />
 
       <logoShowcase
-        v-if="$page.markdownPage.logos.length > 0"
+        v-if="$page.markdownPage.logos > 0"
         :logos="$page.markdownPage.logos"
       />
 
@@ -103,7 +103,7 @@
 
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
-        v-if="$page.markdownPage.contactData.length > 0"
+        v-if="$page.markdownPage.contactData > 0"
       />
     </div>
   </Layout>
@@ -249,7 +249,7 @@
          id
          title
          subtitle
-         excerpt(length: 2000)
+         excerpt
          sourceUrl
          btnTxt
          image

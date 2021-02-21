@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-20 px-4 bg-cover text-center" :style="img">
+  <section class="pb-20 px-4 bg-cover text-center" :style="cta.img">
     <div class="w-full max-w-7xl mx-auto">
       <h2 class="text-4xl leading-tight font-semibold font-heading">
         {{ cta.title }}
