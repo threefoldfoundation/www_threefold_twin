@@ -65,13 +65,13 @@ query {
       dribbble
       instagram
       description
-      items{
-        title
-        links{
-          name
-          link
-        }
-      }
+    #  items{
+    #    title
+    #    links{
+    #      name
+    #      link
+    #    }
+    #  }
     }
 }
 </static-query>

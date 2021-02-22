@@ -130,7 +130,7 @@
       }
     }
 
-    allProjectTag(filter: { title: {in: ["farming"]}}){
+    allProjectTag(filter: { title: {in: ["twin"]}}){
      edges{
       node{
         id

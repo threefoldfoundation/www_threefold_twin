@@ -144,7 +144,7 @@
       }
     }
 
-     memberships: allMembership(filter: {title: {in: ["foundation", "tech"]}}){
+     memberships: allMembership(filter: {title: {in: ["foundation", "tech", "twin"]}}){
      edges{
       node{
         id
