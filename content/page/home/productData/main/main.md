@@ -1,5 +1,5 @@
 ---
 id: apps
-title: Access an array of applications specifically designed to secure your everyday needs, all from one place.
-subtitle: ''
+title: ''
+subtitle: Access an array of applications specifically designed to secure your everyday needs, all from one place.
 ---
