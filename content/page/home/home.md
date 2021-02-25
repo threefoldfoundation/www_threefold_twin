@@ -1,10 +1,10 @@
 ---
 id: home
-header_title: BIG TITLE
-header_image: ./home_image.png
-header_altImg: BIG TITLE
-header_excerpt: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-button: Button
+header_title: Finally, you are fully private and secure
+header_image: ./header.png
+header_altImg: digitaltwin
+header_excerpt: The Digital Twin assures that only you own your data, and no one else.  Access numerous applications while forever remaining fully secure, private and anonymous.
+button: Get Lifetime Access Now
 link: '' #link for button
 solution_image: ''
 productsMain: product

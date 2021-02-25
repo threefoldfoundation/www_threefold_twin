@@ -1,6 +1,6 @@
 ---
 id: footer
-description: RECREATE YOUR DIGITAL LIFE
+description: ''
 linkedin: '#' #replace # with a link 
 facebook: '#'
 twitter: '#'
