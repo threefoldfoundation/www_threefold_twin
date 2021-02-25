@@ -14,6 +14,6 @@ logos: [logo1, logo2, logo3, logo4, logo5, logo6]
 solution_image2: ./manipulation_cost.png
 comparisonMain: comparison
 comparisonSecs: [section1, section2, section3]
-solution_image3: ''
+solution_image3: ./pay_once.png
 cta: home_cta
 ---
