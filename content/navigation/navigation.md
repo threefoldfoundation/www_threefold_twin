@@ -2,8 +2,8 @@
 id: navigation
 navLinks:
   - name: Wiki
-    link: ''
-    external: false
+    link: http://wiki.twin.threefold.io/
+    external: true
     expandable: false
 
   - name: Blog
