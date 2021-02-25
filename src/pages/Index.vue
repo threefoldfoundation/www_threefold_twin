@@ -40,6 +40,15 @@
 
     <Comparison
         v-if="
+          $page.markdownPage.comparisonSecs2 &&
+          $page.markdownPage.comparisonSecs.length > 0
+        "
+        :main="$page.markdownPage.comparisonMain2"
+        :sections="$page.markdownPage.comparisonSecs"
+    />
+
+    <Comparison
+        v-if="
           $page.markdownPage.comparisonSecs &&
           $page.markdownPage.comparisonSecs.length > 0
         "
@@ -127,6 +136,19 @@
           link
         }
         comparisonSecs{
+          id
+          svg
+          title
+          content
+        }
+        comparisonMain2{
+          id
+          title
+          description
+          button
+          link
+        }
+        comparisonSecs2{
           id
           svg
           title
