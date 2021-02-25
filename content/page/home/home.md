@@ -11,9 +11,9 @@ productsMain: apps
 productData: [app_1, app_2, app_3, app_4, app_5, app_6]
 header: apps_button
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
+solution_image2: ./manipulation_cost.png
 comparisonMain: comparison
 comparisonSecs: [section1, section2, section3]
-solution_image2: ''
 solution_image3: ''
 cta: home_cta
 ---
