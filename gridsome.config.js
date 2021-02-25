@@ -116,6 +116,13 @@ module.exports = {
                 path: './content/page/**/comparison/**/*.md',
             }
         },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Comparison2',
+                path: './content/page/**/comparison2/**/*.md',
+            }
+        },
 
         {
             use: '@gridsome/source-filesystem',
@@ -178,6 +185,8 @@ module.exports = {
                     signup: 'SignUp',
                     comparisonMain: 'Comparison',
                     comparisonSecs: 'Comparison',
+                    comparisonMain2: 'Comparison2',
+                    comparisonSecs2: 'Comparison2',
                     howItWorksMain_2: 'HowItWorks_2',
                     howItWorks_2: 'HowItWorks_2',
                     roadmap: 'Roadmap',
