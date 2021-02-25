@@ -12,7 +12,7 @@
           <a href="/" class="flex">
         
             <g-image
-              :src="require(`!!assets-loader!@images/TFN_black.svg`)"
+              :src="require(`!!assets-loader!@images/twin_logo.svg`)"
               class="mr-3 fill-current logo"
               width="180"
               v-if="theme == 'light'"
@@ -20,7 +20,7 @@
             />
 
             <g-image
-              :src="require(`!!assets-loader!@images/TFN_white.svg`)"
+              :src="require(`!!assets-loader!@images/twin_logo.svg`)"
               class="mr-3 fill-current logo"
               width="180"
               v-else

@@ -14,7 +14,7 @@ navLinks:
   - name: Partners
     link: /partners
     external: false
-    expandable: true
+    expandable: false
 
   - name: Community
     link: https://forums.threefold.io/

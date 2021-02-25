@@ -1,6 +1,6 @@
 ---
 id: footer
-description: SLOGAN
+description: RECREATE YOUR DIGITAL LIFE
 linkedin: '#' #replace # with a link 
 facebook: '#'
 twitter: '#'
@@ -10,44 +10,10 @@ youtube: '#'
 github: '#'
 telegram: '#'
 items:
- - title: TITLE
+ - title: LEGAL
    links:
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#' #add as many links as you like
- - title: TITLE
-   links:
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
- - title: TITLE
-   links:
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
- - title: TITLE
-   links:
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
-    - name: Link
-      link: '#'
+    - name: Terms & Conditions
+      link: https://wiki.threefold.io/#/terms_conditions_websites
+    - name: Privacy Policy
+      link: https://wiki.threefold.io/#/privacypolicy
 ---

@@ -9,14 +9,14 @@
         <div class="space-y-8 xl:col-span-1">
           <g-image
             class="h-10"
-            :src="require(`!!assets-loader!@images/tf_icon_black.svg`)"
+            :src="require(`!!assets-loader!@images/twin_icon.svg`)"
             alt="Company name"
             v-if="theme == 'light'"
           />
 
           <g-image
             class="h-10"
-            :src="require(`!!assets-loader!@images/tf_icon_white.svg`)"
+            :src="require(`!!assets-loader!@images/twin_icon.svg`)"
             alt="Company name"
             v-else
           />
@@ -161,7 +161,7 @@
       </div>
       <div class="mt-12 border-t border-gray-200 pt-8">
         <p class="text-base leading-6 text-gray-400 xl:text-center">
-          &#xA9; 2021 ThreeFold, All rights reserved.
+          &#xA9; 2021 DigitalTwin, All rights reserved.
         </p>
       </div>
     </div>
