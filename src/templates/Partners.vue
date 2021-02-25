@@ -99,6 +99,11 @@ export default {
       selected: "All",
     };
   },
+  metaInfo() {
+    return {
+      title: this.pageName,
+    };
+  },
   methods: {
     resetAll() {
       this.selected = "All";
@@ -111,6 +116,11 @@ export default {
         res.push({ title: edge.node.title, path: edge.node.path })
       );
       return res;
+    },
+        pageName() {
+      let path = this.$route.path.substring(1);
+      let name = path[0].toUpperCase() + path.slice(1);
+      return name;
     },
     baseurl() {
       return "/partners/";

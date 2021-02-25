@@ -210,10 +210,10 @@ export default {
     InTheNews,
     SignUp,
   },
-  metaInfo() {
-    return {
-      title: this.$page.markdownPage.title,
-    };
+  metaInfo: {
+    title: "",
+    titleTemplate: "DigitalTwin",
+ 
   },
 };
 </script>

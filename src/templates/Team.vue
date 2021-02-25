@@ -82,6 +82,11 @@ export default {
     TagFilterHeader,
     Pagination,
   },
+    metaInfo() {
+    return {
+      title: this.pageName,
+    };
+  },
   computed: {
     memberships() {
       var res = [{ title: "All", path: "/team" }];
@@ -89,6 +94,11 @@ export default {
         res.push({ title: edge.node.title, path: edge.node.path })
       );
       return res;
+    },
+      pageName() {
+      let path = this.$route.path.substring(1);
+      let name = path[0].toUpperCase() + path.slice(1);
+      return name;
     },
     baseurl() {
       return "/team/";
