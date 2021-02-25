@@ -1,11 +1,9 @@
 ---
-id: home_header
-title: title
-subtitle: SUBTITLE
-btn1: Button
+id: apps_button
+title: ''
+subtitle: ''
+btn1: Get Your DT
 link1: '' #link for button
-btn2: Button
+btn2: ''
 link2: '' #link for button
 ---
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.

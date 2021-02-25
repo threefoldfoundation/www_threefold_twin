@@ -1,5 +1,5 @@
 ---
 id: logo2
-image: ./logo2.png
-url: ''
+image: ./solidaridad.png
+url: /partners/solidaridad
 ---

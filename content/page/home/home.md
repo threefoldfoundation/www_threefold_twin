@@ -9,11 +9,11 @@ link: '' #link for button
 solution_image: ./dt_apps.png
 productsMain: apps
 productData: [app_1, app_2, app_3, app_4, app_5, app_6]
-header: home_header
+header: apps_button
+logos: [logo1, logo2, logo3, logo4, logo5, logo6]
 comparisonMain: comparison
 comparisonSecs: [section1, section2, section3]
 solution_image2: ''
-logos: [logo1, logo2, logo3, logo4, logo5, logo6] #you can continue adding logos as needed
 solution_image3: ''
 cta: home_cta
 ---
