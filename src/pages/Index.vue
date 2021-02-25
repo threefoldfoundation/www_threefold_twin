@@ -1,84 +1,85 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container mx-auto">
-    <Header
-      :title="$page.markdownPage.header_title"
-      :image="$page.markdownPage.header_image"
-      :altImg="$page.markdownPage.header_altImg"
-      :excerpt="$page.markdownPage.header_excerpt"
-      :button="$page.markdownPage.button"
-      :link="$page.markdownPage.link"
-    />
-      
-    <g-image 
+      <Header
+        :title="$page.markdownPage.header_title"
+        :image="$page.markdownPage.header_image"
+        :altImg="$page.markdownPage.header_altImg"
+        :excerpt="$page.markdownPage.header_excerpt"
+        :button="$page.markdownPage.button"
+        :link="$page.markdownPage.link"
+      />
+
+      <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
-    />
+      />
 
-    <ShowcaseProducts
+      <ShowcaseProducts
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
-    />
+      />
 
-    <SolutionsHeader
-      v-if="$page.markdownPage.header"
-      :header="$page.markdownPage.header"
-    />
+      <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
 
-    <logoShowcase
-      v-if="$page.markdownPage.logos.length > 0"
-      :logos="$page.markdownPage.logos"
-    />
-    
-    <g-image 
-        v-if="$page.markdownPage.solution_image2"
-        :src="$page.markdownPage.solution_image2.src"
-    />
+      <logoShowcase
+        v-if="$page.markdownPage.logos.length > 0"
+        :logos="$page.markdownPage.logos"
+      />
+    </div>
 
-    <Comparison2
+    <g-image
+      v-if="$page.markdownPage.solution_image2"
+      :src="$page.markdownPage.solution_image2.src"
+    />
+    <div class="container mx-auto">
+      <Comparison2
         v-if="
           $page.markdownPage.comparisonSecs2 &&
           $page.markdownPage.comparisonSecs2.length > 0
         "
         :main="$page.markdownPage.comparisonMain2"
         :sections="$page.markdownPage.comparisonSecs2"
-    />
+      />
 
-    <Comparison
+      <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
           $page.markdownPage.comparisonSecs.length > 0
         "
         :main="$page.markdownPage.comparisonMain"
         :sections="$page.markdownPage.comparisonSecs"
-    />
-    
-    <g-image 
+      />
+
+      <g-image
         v-if="$page.markdownPage.solution_image3"
         :src="$page.markdownPage.solution_image3.src"
-    />
+      />
 
-    <CallToAction 
-      v-if="$page.markdownPage.cta" 
-      :cta="$page.markdownPage.cta" 
-    />
+      <CallToAction
+        v-if="$page.markdownPage.cta"
+        :cta="$page.markdownPage.cta"
+      />
 
-    <!-- <NewCard
+      <!-- <NewCard
       v-for="card in $page.markdownPage.cards"
       :key="card.id"
       :card="card"
     /> -->
 
-    <!-- <InTheNews
+      <!-- <InTheNews
       v-if="$page.markdownPage.inTheNews"
       :news="$page.markdownPage.inTheNews"
     /> -->
 
-    <!-- <SignUp
+      <!-- <SignUp
       v-if="$page.markdownPage.signup"
       :signup="$page.markdownPage.signup"
     /> -->
@@ -217,7 +218,6 @@ export default {
   metaInfo: {
     title: "",
     titleTemplate: "DigitalTwin",
- 
   },
 };
 </script>
