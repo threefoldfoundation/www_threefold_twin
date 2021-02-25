@@ -8,34 +8,70 @@
       :button="$page.markdownPage.button"
       :link="$page.markdownPage.link"
     />
+      
+    <g-image 
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
+    />
+
+    <ShowcaseProducts
+        :main="$page.markdownPage.productsMain"
+        :products="$page.markdownPage.productData"
+        v-if="
+          $page.markdownPage.productData &&
+          $page.markdownPage.productData.length > 0
+        "
+    />
 
     <SolutionsHeader
       v-if="$page.markdownPage.header"
       :header="$page.markdownPage.header"
     />
 
-    <NewCard
-      v-for="card in $page.markdownPage.cards"
-      :key="card.id"
-      :card="card"
-    />
-
-    <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
-
     <logoShowcase
       v-if="$page.markdownPage.logos.length > 0"
       :logos="$page.markdownPage.logos"
     />
+    
+    <g-image 
+        v-if="$page.markdownPage.solution_image2"
+        :src="$page.markdownPage.solution_image2.src"
+    />
 
-    <InTheNews
+    <Comparison
+        v-if="
+          $page.markdownPage.comparisonSecs &&
+          $page.markdownPage.comparisonSecs.length > 0
+        "
+        :main="$page.markdownPage.comparisonMain"
+        :sections="$page.markdownPage.comparisonSecs"
+    />
+    
+    <g-image 
+        v-if="$page.markdownPage.solution_image3"
+        :src="$page.markdownPage.solution_image3.src"
+    />
+
+    <CallToAction 
+      v-if="$page.markdownPage.cta" 
+      :cta="$page.markdownPage.cta" 
+    />
+
+    <!-- <NewCard
+      v-for="card in $page.markdownPage.cards"
+      :key="card.id"
+      :card="card"
+    /> -->
+
+    <!-- <InTheNews
       v-if="$page.markdownPage.inTheNews"
       :news="$page.markdownPage.inTheNews"
-    />
+    /> -->
 
-    <SignUp
+    <!-- <SignUp
       v-if="$page.markdownPage.signup"
       :signup="$page.markdownPage.signup"
-    />
+    /> -->
   </Layout>
 </template>
 
@@ -50,6 +86,21 @@
         header_altImg
         button
         link
+        solution_image
+        solution_image2
+        solution_image3
+        productsMain{
+          id
+          title
+          subtitle
+          image
+        }
+        productData{
+         id
+         title
+         content
+         image
+        }
         header{
          title
          subtitle
@@ -66,6 +117,19 @@
           button
           link
           order
+          content
+        }
+        comparisonMain{
+          id
+          title
+          description
+          button
+          link
+        }
+        comparisonSecs{
+          id
+          svg
+          title
           content
         }
         cta{
@@ -103,20 +167,24 @@
 
 <script>
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
+import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
+import Comparison from "~/components/custom/sections/Comparison.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 
 export default {
   components: {
     Header,
+    ShowcaseProducts,
     SolutionsHeader,
     NewCard,
     CallToAction,
     logoShowcase,
+    Comparison,
     InTheNews,
     SignUp,
   },

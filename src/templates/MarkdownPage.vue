@@ -27,7 +27,6 @@
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
-      
 
       <NewCard
         v-for="card in $page.markdownPage.cards"
