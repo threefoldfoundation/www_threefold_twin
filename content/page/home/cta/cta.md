@@ -1,7 +1,7 @@
 ---
 id: home_cta
 title: ''
-button: Get You DT
+button: Get Your DT
 link: '' #Add button link here
 ---
 
