@@ -1,7 +1,7 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-      <Header
+    <!-- <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5"> -->
+      <!-- <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
           $page.markdownPage.header_title &&
@@ -11,28 +11,29 @@
         :image="$page.markdownPage.header_image"
         :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
-      />
+      /> -->
 
-      <VerticalNav
+      <!-- <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides && $page.markdownPage.slides.length > 0"
-      />
-
-      <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
-      />
+      /> -->
       
       <g-image 
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
 
-      <NewCard
+    <div class="container mx-auto">
+      <SolutionsHeader
+        v-if="$page.markdownPage.header"
+        :header="$page.markdownPage.header"
+      />
+
+      <!-- <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
         :card="card"
-      />
+      /> -->
 
       <HowItWorks
         v-if="$page.markdownPage.howItWorks.length > 0"
@@ -64,10 +65,10 @@
         "
       />
 
-      <Roadmap
+      <!-- <Roadmap
         v-if="$page.markdownPage.roadmap.length > 0"
         :roadmap="$page.markdownPage.roadmap"
-      />
+      /> -->
 
       <FourTiersWithToggle
         v-if="$page.markdownPage.pricingPlans.length > 0"
@@ -105,6 +106,7 @@
         v-if="$page.markdownPage.contactData.length > 0"
       />
     </div>
+   <!-- </div> -->
   </Layout>
 </template>
 
