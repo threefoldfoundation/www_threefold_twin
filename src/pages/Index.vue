@@ -1,5 +1,6 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
+    <div class="container mx-auto">
     <Header
       :title="$page.markdownPage.header_title"
       :image="$page.markdownPage.header_image"
@@ -38,7 +39,7 @@
         :src="$page.markdownPage.solution_image2.src"
     />
 
-    <Comparison
+    <Comparison2
         v-if="
           $page.markdownPage.comparisonSecs2 &&
           $page.markdownPage.comparisonSecs2.length > 0
@@ -81,6 +82,7 @@
       v-if="$page.markdownPage.signup"
       :signup="$page.markdownPage.signup"
     /> -->
+    </div>
   </Layout>
 </template>
 
@@ -195,6 +197,7 @@ import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
+import Comparison2 from "~/components/custom/sections/Comparison2.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 
@@ -207,6 +210,7 @@ export default {
     CallToAction,
     logoShowcase,
     Comparison,
+    Comparison2,
     InTheNews,
     SignUp,
   },
