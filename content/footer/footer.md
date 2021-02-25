@@ -10,10 +10,12 @@ youtube: '#'
 github: '#'
 telegram: '#'
 items:
- - title: LEGAL
+ - title: ''
    links:
-    - name: Terms & Conditions
+    - name: Terms&Conditions
       link: https://wiki.threefold.io/#/terms_conditions_websites
-    - name: Privacy Policy
+ - title: ''
+   links:
+    - name: PrivacyPolicy
       link: https://wiki.threefold.io/#/privacypolicy
 ---
