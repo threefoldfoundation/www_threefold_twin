@@ -1,5 +1,5 @@
 ---
 id: logo3
-image: ./kleos.png
+image: ./logo3.png
 url: ''
 ---

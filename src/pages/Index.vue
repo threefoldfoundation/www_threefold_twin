@@ -1,77 +1,40 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-      <g-image
-      v-if="$page.markdownPage.solution_image"
-      :src="$page.markdownPage.solution_image.src"
-    />
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-   <!-- <Header
+    <Header
       :title="$page.markdownPage.header_title"
       :image="$page.markdownPage.header_image"
       :altImg="$page.markdownPage.header_altImg"
       :excerpt="$page.markdownPage.header_excerpt"
       :button="$page.markdownPage.button"
       :link="$page.markdownPage.link"
-    />  -->
+    />
 
     <SolutionsHeader
       v-if="$page.markdownPage.header"
       :header="$page.markdownPage.header"
     />
-    
-    <!-- <ShowcaseProducts
-        :main="$page.markdownPage.productsMain"
-        :products="$page.markdownPage.productData"
-        v-if="
-          $page.markdownPage.productData &&
-          $page.markdownPage.productData.length > 0
-        "
-    /> -->
-    
-    <!-- <Comparison
-        v-if="
-          $page.markdownPage.comparisonSecs &&
-          $page.markdownPage.comparisonSecs.length > 0
-        "
-        :main="$page.markdownPage.comparisonMain"
-        :sections="$page.markdownPage.comparisonSecs"
-    /> -->
-      
-    <!-- <BrandPanel
-        :brand="$page.markdownPage.brandPanel"
-        v-if="$page.markdownPage.brandPanel"
-    /> -->
 
-    <!-- <NewCard
+    <NewCard
       v-for="card in $page.markdownPage.cards"
       :key="card.id"
       :card="card"
-    /> -->
+    />
 
-    <!-- <logoShowcase
+    <CallToAction v-if="$page.markdownPage.cta" :cta="$page.markdownPage.cta" />
+
+    <logoShowcase
       v-if="$page.markdownPage.logos.length > 0"
       :logos="$page.markdownPage.logos"
-    /> -->
+    />
 
-    <!-- <InTheNews
+    <InTheNews
       v-if="$page.markdownPage.inTheNews"
       :news="$page.markdownPage.inTheNews"
-    /> -->
+    />
 
-    <!-- <SignUp
+    <SignUp
       v-if="$page.markdownPage.signup"
       :signup="$page.markdownPage.signup"
-    /> -->
-
-    </div>
-    <!-- <g-image
-      v-if="$page.markdownPage.solution_image2"
-      :src="$page.markdownPage.solution_image2.src"
-    /> -->
-
-    <CallToAction 
-      v-if="$page.markdownPage.cta" 
-      :cta="$page.markdownPage.cta" 
     />
   </Layout>
 </template>
@@ -87,7 +50,6 @@
         header_altImg
         button
         link
-        solution_image
         header{
          title
          subtitle
@@ -97,18 +59,6 @@
          btn2
          link2
         }
-        productsMain{
-          id
-          title
-          subtitle
-       #  image
-        }
-       productData{
-         id
-         title
-         content
-         image
-       }
         cards{
           id
           title
@@ -123,35 +73,8 @@
           title
           content
           button
-          button2
-          button3
-          link
-          link2
-          link3
-          image
-        }
-        comparisonMain{
-          id
-          title
-          description
-          button
           link
         }
-        comparisonSecs{
-          id
-          svg
-          title
-          content
-        }
-        brandPanel{
-         id
-         title
-         subtitle
-         excerpt
-         sourceUrl
-         btnTxt
-         image
-       }
         logos{
           id
           image
@@ -181,10 +104,7 @@
 <script>
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
-import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
-import Comparison from "~/components/custom/sections/Comparison.vue";
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
-import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
@@ -194,19 +114,16 @@ export default {
   components: {
     Header,
     SolutionsHeader,
-    ShowcaseProducts,
-    Comparison,
     NewCard,
-    BrandPanel,
-    logoShowcase,
     CallToAction,
+    logoShowcase,
     InTheNews,
     SignUp,
   },
-  metaInfo: {
-    title: "",
-    titleTemplate: "ThreeFold DigitalTwin",
- 
+  metaInfo() {
+    return {
+      title: this.$page.markdownPage.title,
+    };
   },
 };
 </script>

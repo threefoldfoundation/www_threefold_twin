@@ -59,7 +59,7 @@
       }
     }  
 
-    allMembership(filter: {title: {in: ["foundation", "tech", "twin"]}}){
+    allMembership(filter: {title: {in: ["foundation", "tech"]}}){
      edges{
       node{
         id

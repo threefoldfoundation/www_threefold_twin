@@ -80,7 +80,6 @@
       id
       title
       countries
-      humanTime : created(format:"DD MMMM YYYY")
       datetime : created(format:"ddd MMM DD YYYY hh:mm:ss zZ")
       image(width:150, height:150)
       image_caption
@@ -134,7 +133,7 @@
       }
     }  
 
-    tags: allProjectTag (filter: { title: {in: ["twin"]}}) {
+    tags: allProjectTag (filter: { title: {in: ["farming"]}}) {
      edges{
       node{
         id

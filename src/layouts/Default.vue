@@ -1,10 +1,10 @@
 <template>
-  <div class="">
-    <!-- <NavBar
+  <div class="container mx-auto">
+    <NavBar
       :navigation="$static.navigation"
       @setTheme="setTheme"
       :theme="this.theme"
-    /> -->
+    />
     <slot />
     <Footer 
       :record="$static.footer"
@@ -65,13 +65,13 @@ query {
       dribbble
       instagram
       description
-    #  items{
-    #    title
-    #    links{
-    #      name
-    #      link
-    #    }
-    #  }
+      items{
+        title
+        links{
+          name
+          link
+        }
+      }
     }
 }
 </static-query>

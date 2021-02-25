@@ -36,7 +36,7 @@
 <page-query>
 
 query($page: Int){
-  entries: allBlog(perPage: 10, page: $page, sortBy: "created", order: DESC, filter: {category: { id: {in: ["twin"]}}}) @paginate{
+  entries: allBlog(perPage: 10, page: $page, sortBy: "created", order: DESC, filter: {category: { id: {in: ["farming"]}}}) @paginate{
     totalCount
     pageInfo {
       totalPages

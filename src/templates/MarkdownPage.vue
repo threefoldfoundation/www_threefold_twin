@@ -15,7 +15,7 @@
 
       <VerticalNav
         :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slides && $page.markdownPage.slides > 0"
+        v-if="$page.markdownPage.slides && $page.markdownPage.slides.length > 0"
       />
 
       <SolutionsHeader
@@ -23,7 +23,7 @@
         :header="$page.markdownPage.header"
       />
       
-      <g-image class="m-auto my-4" 
+      <g-image 
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
@@ -36,13 +36,13 @@
       />
 
       <HowItWorks
-        v-if="$page.markdownPage.howItWorks > 0"
+        v-if="$page.markdownPage.howItWorks.length > 0"
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       />
 
       <Features
-        v-if="$page.markdownPage.features > 0"
+        v-if="$page.markdownPage.features.length > 0"
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
@@ -50,7 +50,7 @@
       <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
-          $page.markdownPage.comparisonSecs > 0
+          $page.markdownPage.comparisonSecs.length > 0
         "
         :main="$page.markdownPage.comparisonMain"
         :sections="$page.markdownPage.comparisonSecs"
@@ -61,28 +61,28 @@
         :products="$page.markdownPage.productData"
         v-if="
           $page.markdownPage.productData &&
-          $page.markdownPage.productData > 0
+          $page.markdownPage.productData.length > 0
         "
       />
 
       <Roadmap
-        v-if="$page.markdownPage.roadmap > 0"
+        v-if="$page.markdownPage.roadmap.length > 0"
         :roadmap="$page.markdownPage.roadmap"
       />
 
       <FourTiersWithToggle
-        v-if="$page.markdownPage.pricingPlans > 0"
+        v-if="$page.markdownPage.pricingPlans.length > 0"
         :main="$page.markdownPage.pricing_plansMain"
         :pricingPlans="$page.markdownPage.pricingPlans"
       />
 
       <WithComparisonTable
-        v-if="$page.markdownPage.plans > 0"
+        v-if="$page.markdownPage.plans.length > 0"
         :plans="$page.markdownPage.plans"
       />
 
       <logoShowcase
-        v-if="$page.markdownPage.logos > 0"
+        v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
       />
 
@@ -103,7 +103,7 @@
 
       <GetInTouch
         :contacts="$page.markdownPage.contactData"
-        v-if="$page.markdownPage.contactData > 0"
+        v-if="$page.markdownPage.contactData.length > 0"
       />
     </div>
   </Layout>
@@ -249,7 +249,7 @@
          id
          title
          subtitle
-         excerpt
+         excerpt(length: 2000)
          sourceUrl
          btnTxt
          image
@@ -303,17 +303,10 @@ export default {
     BrandPanel,
   },
 
-    metaInfo() {
+  metaInfo() {
     return {
-      title: this.pageName,
+      title: this.$page.markdownPage.title,
     };
-  },
-  computed: {
-    pageName() {
-      let path = this.$route.path.substring(1);
-      let name = path[0].toUpperCase() + path.slice(1);
-      return name;
-    },
   },
   mounted() {
     console.log(this.$page.markdownPage);

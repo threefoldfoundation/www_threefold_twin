@@ -30,7 +30,7 @@
 <page-query>
 
 query ($private: Int){
-  projects: allProject (filter: { private: { ne: $private }, tags: { id: {in: ["twin"]}}}){   
+  projects: allProject (filter: { private: { ne: $private }, tags: { id: {in: ["farming"]}}}){   
     edges {
         node {
                 id
@@ -60,7 +60,7 @@ query ($private: Int){
     }
   }
 
-  people: allPerson(filter: { private: { ne: $private }, memberships: { id: {in: ["foundation", "tech", "twin"]}}}) {   
+  people: allPerson(filter: { private: { ne: $private }, memberships: { id: {in: ["foundation", "tech"]}}}) {   
      edges {
       node {
         id
