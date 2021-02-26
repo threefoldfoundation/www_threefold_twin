@@ -159,7 +159,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-12 border-t border-gray-200 pt-8">
+      <div class="border-t border-gray-200 pt-8">
         <p class="text-base leading-6 text-gray-400 xl:text-center">
           &#xA9; 2021 DigitalTwin, All rights reserved.
         </p>
