@@ -1,6 +1,6 @@
 ---
 id: home
-header_title: Finally, you are fully private and secure
+header_title: Finally you can be fully private and secure!
 header_image: ./header.png
 header_altImg: digitaltwin
 header_excerpt: The Digital Twin assures that only you own your data, and no one else.  Access numerous applications while forever remaining fully secure, private and anonymous.

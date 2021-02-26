@@ -1,7 +1,7 @@
 ---
 id: landing_header
 title: ''
-subtitle: Finally, you can be fully private and secure
+subtitle: Finally you can be fully private and secure!
 btn1: Get Lifetime Access
 link1: '' 
 btn2: ''

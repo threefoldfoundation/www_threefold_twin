@@ -10,6 +10,11 @@
         :link="$page.markdownPage.link"
       />
 
+      <!-- <SolutionsHeader
+        v-if="$page.markdownPage.header2"
+        :header="$page.markdownPage.header2"
+      /> -->
+
       <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
@@ -23,7 +28,7 @@
           $page.markdownPage.productData.length > 0
         "
       />
-
+      
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
@@ -114,6 +119,15 @@
          image
         }
         header{
+         title
+         subtitle
+         content
+         btn1
+         link1
+         btn2
+         link2
+        }
+        header2{
          title
          subtitle
          content

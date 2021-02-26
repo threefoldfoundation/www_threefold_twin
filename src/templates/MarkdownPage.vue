@@ -1,6 +1,6 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <!-- <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5"> -->
+    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <!-- <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
@@ -23,7 +23,6 @@
         :src="$page.markdownPage.solution_image.src"
       />
 
-    <div class="container mx-auto">
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
@@ -105,8 +104,7 @@
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
       />
-    </div>
-   <!-- </div> -->
+   </div>
   </Layout>
 </template>
 
@@ -116,10 +114,10 @@
         id
         path
         excerpt
-        header_excerpt
-        header_altImg
-        header_title
-        header_image
+      #  header_excerpt
+      #  header_altImg
+      #  header_title
+      #  header_image
         solution_image
         slides{
           id
