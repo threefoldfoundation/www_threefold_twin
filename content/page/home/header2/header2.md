@@ -2,7 +2,7 @@
 id: home_header
 title: ''
 subtitle: Finally, you are fully private and secure
-btn1: Get Lifetime Access Now
+btn1: '' #Get Lifetime Access Now
 link1: '' #link for button
 btn2: ''
 link2: '' #link for button

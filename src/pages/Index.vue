@@ -10,6 +10,11 @@
         :link="$page.markdownPage.link"
       />
 
+      <SignUp
+      v-if="$page.markdownPage.signup"
+      :signup="$page.markdownPage.signup"
+    />
+
       <!-- <SolutionsHeader
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"
@@ -82,11 +87,6 @@
       <!-- <InTheNews
       v-if="$page.markdownPage.inTheNews"
       :news="$page.markdownPage.inTheNews"
-    /> -->
-
-      <!-- <SignUp
-      v-if="$page.markdownPage.signup"
-      :signup="$page.markdownPage.signup"
     /> -->
     </div>
   </Layout>

@@ -4,8 +4,9 @@ header_title: Finally you can be fully private and secure!
 header_image: ./header.png
 header_altImg: digitaltwin
 header_excerpt: The Digital Twin assures that only you own your data, and no one else.  Access numerous applications while forever remaining fully secure, private and anonymous.
-button: Get Lifetime Access Now
+button: '' #Get Lifetime Access Now
 link: '' #link for button
+signup: home_cta
 solution_image: ./dt_apps.png
 productsMain: apps
 productData: [app_1, app_2, app_3, app_4, app_5, app_6]

@@ -1,11 +1,6 @@
 ---
 id: navigation
 navLinks:
-  - name: Wiki
-    link: http://wiki.twin.threefold.io/
-    external: true
-    expandable: false
-
   - name: Blog
     link: /blog
     external: false
@@ -34,6 +29,15 @@ social:
   - icon: ''
     link: '' #telegaram link
 ---
+
+<!--
+
+  - name: Wiki
+    link: http://wiki.twin.threefold.io/
+    external: true
+    expandable: false
+
+-->
 
 <!-- social:
   - icon: telegram-plane
