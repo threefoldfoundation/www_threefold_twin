@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <TagFilterHeader
+    <!-- <TagFilterHeader
       :tags="memberships"
       selected="all"
       v-if="$page.memberships.edges.length > 1"
-    />
+    /> -->
     <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
@@ -35,7 +35,7 @@
 
 <page-query>
 query($page: Int){
-  entries: allPerson (perPage: 10, page: $page, sortBy: "rank", order: DESC, filter: { memberships: { id: {in: ["foundation", "tech"]}}}) @paginate{
+  entries: allPerson (perPage: 10, page: $page, sortBy: "rank", order: DESC, filter: { memberships: { id: {in: ["twin"]}}}) @paginate{
     totalCount
     pageInfo {
       totalPages
@@ -82,7 +82,7 @@ export default {
     TagFilterHeader,
     Pagination,
   },
-    metaInfo() {
+  metaInfo() {
     return {
       title: this.pageName,
     };
@@ -95,7 +95,7 @@ export default {
       );
       return res;
     },
-      pageName() {
+    pageName() {
       let path = this.$route.path.substring(1);
       let name = path[0].toUpperCase() + path.slice(1);
       return name;
