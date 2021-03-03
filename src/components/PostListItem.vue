@@ -66,7 +66,7 @@
               </p>
             </div>
           </div>
-          <section class="post-tags container mx-auto relative py-3" v-if="displaytags()">
+          <!-- <section class="post-tags container mx-auto relative py-3" v-if="displaytags()">
             <g-link 
               v-for="tag in record.tags"
               :key="tag.id"
@@ -74,7 +74,7 @@
               class="text-xs bg-transparent hover:text-blue-700 py-2 px-4 mr-2 border hover:border-blue-500 border-gray-600 text-gray-700 rounded-full"
               >{{ tag.title }}</g-link
             >
-          </section>
+          </section> -->
         </div>
       </div>
     </div>
