@@ -1,7 +1,7 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-      <Header
+      <!-- <Header
         v-if="
           $page.markdownPage.id !== 'contact' &&
           $page.markdownPage.header_title &&
@@ -11,38 +11,43 @@
         :image="$page.markdownPage.header_image"
         :altImg="$page.markdownPage.header_altImg"
         :excerpt="$page.markdownPage.header_excerpt"
-      />
+      /> -->
 
-      <VerticalNav
+      <!-- <VerticalNav
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides && $page.markdownPage.slides.length > 0"
+      /> -->
+
+      <g-image
+        v-if="$page.markdownPage.solution_image"
+        :src="$page.markdownPage.solution_image.src"
       />
 
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       />
-      
-      <g-image class="m-auto my-4" 
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
-      
 
-      <NewCard
+      <!-- <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
         :card="card"
-      />
+      /> -->
 
       <HowItWorks
-        v-if="$page.markdownPage.howItWorks&& $page.markdownPage.howItWorks.length > 0"
+        v-if="
+          $page.markdownPage.howItWorks &&
+          $page.markdownPage.howItWorks.length > 0
+        "
         :HIWData="$page.markdownPage.howItWorks"
         :main="$page.markdownPage.howItWorksMain"
       />
 
       <Features
-        v-if="$page.markdownPage.features.length && $page.markdownPage.features.length > 0"
+        v-if="
+          $page.markdownPage.features.length &&
+          $page.markdownPage.features.length > 0
+        "
         :main="$page.markdownPage.featuresMain"
         :features="$page.markdownPage.features"
       />
@@ -57,21 +62,24 @@
       />
 
       <ShowcaseProducts
-        :main="$page.markdownPage.productsMain"
-        :products="$page.markdownPage.productData"
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
+        :main="$page.markdownPage.productsMain"
+        :products="$page.markdownPage.productData"
       />
 
-      <Roadmap
-        v-if="$page.markdownPage.roadmap.length &&$page.markdownPage.roadmap.length > 0"
+      <!-- <Roadmap
+        v-if="$page.markdownPage.roadmap.length > 0"
         :roadmap="$page.markdownPage.roadmap"
-      />
+      /> -->
 
       <FourTiersWithToggle
-        v-if="$page.markdownPage.pricingPlans && $page.markdownPage.pricingPlans.length > 0"
+        v-if="
+          $page.markdownPage.pricingPlans &&
+          $page.markdownPage.pricingPlans.length > 0
+        "
         :main="$page.markdownPage.pricing_plansMain"
         :pricingPlans="$page.markdownPage.pricingPlans"
       />
@@ -102,8 +110,11 @@
       />
 
       <GetInTouch
+        v-if="
+          $page.markdownPage.contactData &&
+          $page.markdownPage.contactData.length > 0
+        "
         :contacts="$page.markdownPage.contactData"
-        v-if="$page.markdownPage.contactData && $page.markdownPage.contactData.length > 0"
       />
     </div>
   </Layout>
@@ -115,10 +126,10 @@
         id
         path
         excerpt
-        header_excerpt
-        header_altImg
-        header_title
-        header_image
+      #  header_excerpt
+      #  header_altImg
+      #  header_title
+      #  header_image
         solution_image
         slides{
           id

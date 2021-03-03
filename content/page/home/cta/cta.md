@@ -1,16 +1,8 @@
 ---
 id: home_cta
-title: Are you ready?
-button: KNOW MORE
+title: ''
+button: '' #Button was Get Your DT
 link: '' #Add button link here
-button2: ''
-link2: '' #Add button link here
-button3: ''
-link3: '' #Add button link here
-image: ./bottom_cta.png
 ---
 
-<!-- button2: Spread our Message
-link: ''
-button3: Join our Community
-link: '' -->
+Early bird offer coming soon. Our first users will pay one small price and get to enjoy the power of the Digital Twin forever!

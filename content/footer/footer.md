@@ -12,42 +12,10 @@ telegram: '#'
 items:
  - title: ''
    links:
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#' #add as many links as you like
+    - name: Terms&Conditions
+      link: https://wiki.threefold.io/#/terms_conditions_websites
  - title: ''
    links:
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#' #add as many links as you like
- - title: ''
-   links:
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#' #add as many links as you like
- - title: ''
-   links:
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#'
-    - name: ''
-      link: '#' #add as many links as you like
+    - name: PrivacyPolicy
+      link: https://wiki.threefold.io/#/privacypolicy
 ---

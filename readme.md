@@ -1,5 +1,5 @@
 
-# ThreeFold DigitalTwin website
+# DigitalTwin website 
 
 ### how to get started
 

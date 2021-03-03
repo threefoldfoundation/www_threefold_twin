@@ -59,7 +59,6 @@
               excerpt
               image(width:800)
               path
-              humanTime : startdate(format:"DD MMM YYYY")
               datetime : created
               
             }
@@ -130,14 +129,14 @@
       }
     }
 
-    allProjectTag(filter: { title: {in: ["farming"]}}){
-     edges{
-      node{
-        id
-        title
-        path
+    allProjectTag(filter: { title: {in: ["farming", "cloud", "grid", "digitaltwin"]}}){
+      edges{
+        node{
+          id
+          title
+          path
+        }
       }
-    }
     }
 
     allNewsTag{
@@ -229,6 +228,7 @@ export default {
   },
   mounted() {
     document.addEventListener("click", this.close);
+    console.log(this.$page.projectTag);
   },
   beforeDestroy() {
     document.removeEventListener("click", this.close);

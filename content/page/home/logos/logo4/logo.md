@@ -1,5 +1,5 @@
 ---
 id: logo4
-image: ./flowgen.png
-url: ''
+image: ./cta.png
+url: /partners/climate_action_project
 ---

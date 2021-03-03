@@ -1,5 +1,5 @@
 ---
 id: logo6
-image: ./digibyte.png
-url: ''
+image: ./beliive.png
+url: /partners/beliive
 ---

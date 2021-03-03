@@ -1,7 +1,7 @@
 ---
 id: comparison
-title: The world needs a new Internet
-description: The current Internet is centralized to tech giants that build power-hungry data centers and exploit user data. ThreeFold looks at updating the current $3.9 Billion IT industry with a new paradigm that serves people and our planet.
-button: Our Values
+title: Set Yourself Free with the Digital Twin
+description: Start getting accustomed to newer apps designed to secure your online existence.
+button: '' #Secure Yourself
 link: '' #add button link here
 ---

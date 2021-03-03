@@ -1,5 +1,5 @@
 ---
 id: logo3
-image: ./kleos.png
-url: ''
+image: ./tftech.png
+url: /partners/threefold_tech
 ---

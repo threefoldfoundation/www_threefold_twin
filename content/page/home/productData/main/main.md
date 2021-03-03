@@ -1,5 +1,5 @@
 ---
-id: product
-title: The building blocks of the P2P
-subtitle: ''
+id: apps
+title: ''
+subtitle: Access an array of applications specifically designed to secure your everyday needs, all from one place.
 ---

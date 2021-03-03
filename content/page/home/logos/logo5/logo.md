@@ -1,5 +1,5 @@
 ---
 id: logo5
-image: ./green_edge.png
-url: ''
+image: ./aiqom.png
+url: /partners/aiqom
 ---

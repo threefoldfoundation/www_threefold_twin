@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-    siteName: 'Threefold Webstack',
+    siteName: 'DigitalTwin',
     plugins: [
 
         // Local models
@@ -54,6 +54,14 @@ module.exports = {
             options: {
                 typeName: 'Header',
                 path: './content/page/**/header/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Header2',
+                path: './content/page/**/header2/*.md',
             }
         },
 
@@ -116,6 +124,13 @@ module.exports = {
                 path: './content/page/**/comparison/**/*.md',
             }
         },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Comparison2',
+                path: './content/page/**/comparison2/**/*.md',
+            }
+        },
 
         {
             use: '@gridsome/source-filesystem',
@@ -167,6 +182,7 @@ module.exports = {
                     slides: 'Slide',
                     contactData: 'Contact',
                     header: 'Header',
+                    header2: 'Header2',
                     howItWorks: 'HowItWorks',
                     howItWorksMain: 'HowItWorks',
                     productsMain: 'ProductTitle',
@@ -178,6 +194,8 @@ module.exports = {
                     signup: 'SignUp',
                     comparisonMain: 'Comparison',
                     comparisonSecs: 'Comparison',
+                    comparisonMain2: 'Comparison2',
+                    comparisonSecs2: 'Comparison2',
                     howItWorksMain_2: 'HowItWorks_2',
                     howItWorks_2: 'HowItWorks_2',
                     roadmap: 'Roadmap',

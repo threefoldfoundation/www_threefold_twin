@@ -1,10 +1,10 @@
 <template>
-  <div class="">
-    <!-- <NavBar
+  <div>
+    <NavBar
       :navigation="$static.navigation"
       @setTheme="setTheme"
       :theme="this.theme"
-    /> -->
+    />
     <slot />
     <Footer 
       :record="$static.footer"

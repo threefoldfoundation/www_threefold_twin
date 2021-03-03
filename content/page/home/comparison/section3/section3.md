@@ -1,6 +1,6 @@
 ---
 id: section3
-svg: ./sustainability.png
+svg: ./efficient.png
 title: ''
 ---
 

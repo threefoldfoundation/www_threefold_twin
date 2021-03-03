@@ -1,6 +1,5 @@
 ---
 id: section2
-svg: ./equality.png
+svg: ./empowering.png
 title: ''
 ---
-
