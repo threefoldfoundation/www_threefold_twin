@@ -4,9 +4,9 @@
 -->
 <template>
   <footer class="bg-white">
-    <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="space-y-8 xl:col-span-1">
+   <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div class="max-w-md mx-auto">
+        <!-- <div class="space-y-8 xl:col-span-1">
           <g-image
             class="h-10"
             :src="require(`!!assets-loader!@images/twin_icon.svg`)"
@@ -119,18 +119,18 @@
               </svg>
             </a>
           </div>
-        </div>
+        </div> -->
         <div
-          class="mt-12 grid md:grid-cols-4 sm:grid-cols-2 xl:mt-0 xl:col-span-2"
+          class="mt-12 grid md:grid-cols-2 sm:grid-cols-2 xl:mt-0 xl:col-span-2 text-center"
         >
-          <!-- class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2" -->
+          
 
           <div
             v-for="footerLink in record.items"
             :key="footerLink.title"
-            class="md:grid md:grid-cols-3"
+            
           >
-            <div>
+            <div class="py-4">
               <h4
                 class="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase"
               >
