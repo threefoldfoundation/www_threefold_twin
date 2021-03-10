@@ -5,7 +5,7 @@
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
         :altImg="$page.markdownPage.header_altImg"
-        :excerpt="$page.markdownPage.header_excerpt"
+        :content="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
         :link="$page.markdownPage.link"
       />
@@ -185,7 +185,7 @@
         }
         inTheNews {
           id
-          excerpt
+          content
           partners {
             path
             logo

@@ -1,11 +1,10 @@
 <template>
   <div class="bg-white">
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <p
+      <div
         class="text-center text-base leading-6 font-semibold uppercase text-gray-600 tracking-wider"
-      >
-        {{ news.excerpt }}
-      </p>
+        v-html="news.content"
+      ></div>
       <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
         <g-link
           v-for="partner in news.partners"
@@ -19,10 +18,7 @@
             :src="require(`!!assets-loader!@images/${partner.logo}`)"
           /> -->
 
-          <img
-            class="max-h-12"
-            :src="partner.logo"
-          />
+          <img class="max-h-12" :src="partner.logo" />
         </g-link>
       </div>
     </div>
