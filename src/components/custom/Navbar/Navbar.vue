@@ -195,7 +195,7 @@
             @keyup.enter="result"
           />
         </div> -->
-        <ul class="list-none inline-flex justify-center md:justify-end">
+        <!-- <ul class="list-none inline-flex justify-center md:justify-end">
           <li class="mr-0 sm:mr-6">
             <ThemeSwitcher v-on="$listeners" :theme="theme" />
           </li>
@@ -213,7 +213,7 @@
               </a>
             </span>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </header>
   </div>
