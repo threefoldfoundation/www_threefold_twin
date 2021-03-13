@@ -33,4 +33,8 @@ export default {
 </script>
 
 
-
+<style scoped>
+section {
+  margin-bottom: 5rem;
+}
+</style>

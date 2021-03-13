@@ -5,7 +5,7 @@
         <h2 class="text-6xl mb-6 leading-tight font-semibold font-heading">
           {{ title }}
         </h2>
-        <div class="mb-8 text-gray-700 leading-relaxed" v-html="excerpt"></div>
+        <div class="mb-8 text-gray-700 leading-relaxed" v-html="content"></div>
         <div v-if="button">
           <a
             v-if="link.includes('http')"
@@ -18,7 +18,6 @@
           <a
             v-else
             class="inline-block bg-gray-900 learn-button hover:bg-gray-700 text-gray-100 px-12 py-2 mr-5 font-semibold rounded shadow rounded-full"
-            
             :href="link"
             >{{ button }}</a
           >
@@ -32,7 +31,7 @@
 
 <script>
 export default {
-  props: ["title", "excerpt", "altImg", "image", "button", "link"],
+  props: ["title", "content", "altImg", "image", "button", "link"],
   computed: {
     img: function () {
       if (!this.image) return "";
