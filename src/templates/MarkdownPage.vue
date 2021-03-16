@@ -33,28 +33,6 @@
         :key="card.id"
         :card="card"
       /> -->
-
-<<<<<<< HEAD
-      <HowItWorks
-        v-if="
-          $page.markdownPage.howItWorks &&
-          $page.markdownPage.howItWorks.length > 0
-        "
-        :HIWData="$page.markdownPage.howItWorks"
-        :main="$page.markdownPage.howItWorksMain"
-      />
-
-      <Features
-        v-if="
-          $page.markdownPage.features.length &&
-          $page.markdownPage.features.length > 0
-        "
-        :main="$page.markdownPage.featuresMain"
-        :features="$page.markdownPage.features"
-      />
-
-=======
->>>>>>> development
       <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
