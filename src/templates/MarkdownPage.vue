@@ -34,6 +34,7 @@
         :card="card"
       /> -->
 
+<<<<<<< HEAD
       <HowItWorks
         v-if="
           $page.markdownPage.howItWorks &&
@@ -52,6 +53,8 @@
         :features="$page.markdownPage.features"
       />
 
+=======
+>>>>>>> development
       <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
@@ -69,11 +72,6 @@
         :main="$page.markdownPage.productsMain"
         :products="$page.markdownPage.productData"
       />
-
-      <!-- <Roadmap
-        v-if="$page.markdownPage.roadmap.length > 0"
-        :roadmap="$page.markdownPage.roadmap"
-      /> -->
 
       <FourTiersWithToggle
         v-if="
@@ -131,13 +129,6 @@
       #  header_title
       #  header_image
         solution_image
-        slides{
-          id
-          title
-          excerpt
-          image
-          order
-        }
        header{
          title
          subtitle
@@ -156,16 +147,6 @@
           order
           content
         }
-       howItWorks{
-         id
-         title
-         content
-       }
-       howItWorksMain{
-         id
-         title
-         image
-       }
        productsMain{
           id
           title
@@ -178,19 +159,6 @@
          content
          image
        }
-        featuresMain{
-          id
-          title 
-          btn 
-          link
-          content
-        }
-        features{
-          id
-          title 
-          svg
-          content
-        }
         comparisonMain{
           id
           title
@@ -203,39 +171,6 @@
           svg
           title
           content
-        }
-        roadmap{
-          id
-          title
-          excerpt
-        }
-        pricing_plansMain{
-          id
-          title
-          button1
-          button2
-          excerpt
-        }
-        pricingPlans{
-          id
-          title
-          excerpt
-          price
-          duration
-          button
-          link
-          includeTitle
-          options
-        }
-        plans{
-          id
-          title
-          rows {
-            title
-            firstCol
-            secCol
-            thirdCol
-          }
         }
         logos{
           id
@@ -256,21 +191,6 @@
           button2
           link2
         }
-        brandPanel{
-         id
-         title
-         subtitle
-         excerpt(length: 2000)
-         sourceUrl
-         btnTxt
-         image
-       }
-        contactData{
-         id
-         title
-         mail
-         phone
-       }
     }
   }
 
@@ -367,4 +287,4 @@ export default {
 .gridsome-highlight pre[class*="language-"].line-numbers {
   padding-left: 2.8em;
 }
-</style> >
+</style>

@@ -77,9 +77,8 @@ query($page: Int){
         title
         path
       }
+    }
   }
-}
-
 }
 </page-query>
 
@@ -117,8 +116,8 @@ export default {
       );
       return res;
     },
-        pageName() {
-      let path = this.$route.path.substring(1);
+    pageName() {
+      let path = this.$route.path.replace(/^\/|\/$/g, "");
       let name = path[0].toUpperCase() + path.slice(1);
       return name;
     },
