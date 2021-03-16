@@ -17,8 +17,8 @@
         :slides="$page.markdownPage.slides"
         v-if="$page.markdownPage.slides && $page.markdownPage.slides.length > 0"
       /> -->
-      
-      <g-image 
+
+      <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
@@ -34,18 +34,6 @@
         :card="card"
       /> -->
 
-      <HowItWorks
-        v-if="$page.markdownPage.howItWorks.length > 0"
-        :HIWData="$page.markdownPage.howItWorks"
-        :main="$page.markdownPage.howItWorksMain"
-      />
-
-      <Features
-        v-if="$page.markdownPage.features.length > 0"
-        :main="$page.markdownPage.featuresMain"
-        :features="$page.markdownPage.features"
-      />
-
       <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
@@ -56,18 +44,13 @@
       />
 
       <ShowcaseProducts
-        :main="$page.markdownPage.productsMain"
-        :products="$page.markdownPage.productData"
         v-if="
           $page.markdownPage.productData &&
           $page.markdownPage.productData.length > 0
         "
+        :main="$page.markdownPage.productsMain"
+        :products="$page.markdownPage.productData"
       />
-
-      <!-- <Roadmap
-        v-if="$page.markdownPage.roadmap.length > 0"
-        :roadmap="$page.markdownPage.roadmap"
-      /> -->
 
       <FourTiersWithToggle
         v-if="$page.markdownPage.pricingPlans.length > 0"
@@ -104,7 +87,7 @@
         :contacts="$page.markdownPage.contactData"
         v-if="$page.markdownPage.contactData.length > 0"
       />
-   </div>
+    </div>
   </Layout>
 </template>
 
@@ -119,13 +102,6 @@
       #  header_title
       #  header_image
         solution_image
-        slides{
-          id
-          title
-          excerpt
-          image
-          order
-        }
        header{
          title
          subtitle
@@ -144,16 +120,6 @@
           order
           content
         }
-       howItWorks{
-         id
-         title
-         content
-       }
-       howItWorksMain{
-         id
-         title
-         image
-       }
        productsMain{
           id
           title
@@ -166,19 +132,6 @@
          content
          image
        }
-        featuresMain{
-          id
-          title 
-          btn 
-          link
-          content
-        }
-        features{
-          id
-          title 
-          svg
-          content
-        }
         comparisonMain{
           id
           title
@@ -191,39 +144,6 @@
           svg
           title
           content
-        }
-        roadmap{
-          id
-          title
-          excerpt
-        }
-        pricing_plansMain{
-          id
-          title
-          button1
-          button2
-          excerpt
-        }
-        pricingPlans{
-          id
-          title
-          excerpt
-          price
-          duration
-          button
-          link
-          includeTitle
-          options
-        }
-        plans{
-          id
-          title
-          rows {
-            title
-            firstCol
-            secCol
-            thirdCol
-          }
         }
         logos{
           id
@@ -244,21 +164,6 @@
           button2
           link2
         }
-        brandPanel{
-         id
-         title
-         subtitle
-         excerpt(length: 2000)
-         sourceUrl
-         btnTxt
-         image
-       }
-        contactData{
-         id
-         title
-         mail
-         phone
-       }
     }
   }
 
@@ -355,4 +260,4 @@ export default {
 .gridsome-highlight pre[class*="language-"].line-numbers {
   padding-left: 2.8em;
 }
-</style> >
+</style>

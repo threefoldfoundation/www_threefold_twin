@@ -123,11 +123,9 @@
         <div
           class="mt-12 grid md:grid-cols-2 sm:grid-cols-2 xl:mt-0 xl:col-span-2 text-center"
         >
-          
-
           <div
-            v-for="footerLink in record.items"
-            :key="footerLink.title"
+            v-for="(footerLink, index) in record.items"
+            :key="index"
             
           >
             <div class="py-4">

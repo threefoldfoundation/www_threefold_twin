@@ -135,9 +135,9 @@ export default {
   font-family: "Roboto", sans-serif;
   line-height: 1.2;
 }
-
 .post-card-image {
   max-width: 100%;
-  /* height: auto; */
+  height: auto;
+  max-height: 400px;
 }
 </style>
