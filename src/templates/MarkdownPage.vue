@@ -52,25 +52,9 @@
         :products="$page.markdownPage.productData"
       />
 
-      <FourTiersWithToggle
-        v-if="$page.markdownPage.pricingPlans.length > 0"
-        :main="$page.markdownPage.pricing_plansMain"
-        :pricingPlans="$page.markdownPage.pricingPlans"
-      />
-
-      <WithComparisonTable
-        v-if="$page.markdownPage.plans.length > 0"
-        :plans="$page.markdownPage.plans"
-      />
-
       <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
-      />
-
-      <BrandPanel
-        :brand="$page.markdownPage.brandPanel"
-        v-if="$page.markdownPage.brandPanel"
       />
 
       <CallToAction
@@ -81,11 +65,6 @@
       <SignUp
         v-if="$page.markdownPage.signup"
         :signup="$page.markdownPage.signup"
-      />
-
-      <GetInTouch
-        :contacts="$page.markdownPage.contactData"
-        v-if="$page.markdownPage.contactData.length > 0"
       />
     </div>
   </Layout>
@@ -173,47 +152,30 @@
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
-import GetInTouch from "~/components/custom/Navbar/Getintouch.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
-import HowItWorks from "~/components/custom/sections/HowItWorks.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
-import Features from "~/components/custom/sections/Features.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
-import Roadmap from "~/components/custom/sections/Roadmap.vue";
-import FourTiersWithToggle from "~/components/marketing/sections/pricing/four_tiers_with_toggle.vue";
-import WithComparisonTable from "~/components/marketing/sections/pricing/with_comparison_table.vue";
-import BrandPanel from "~/components/marketing/sections/cta-sections/BrandPanel.vue";
 
 export default {
   components: {
     NewCard,
     Header,
     VerticalNav,
-    GetInTouch,
     SolutionsHeader,
-    HowItWorks,
     ShowcaseProducts,
-    Features,
     logoShowcase,
     CallToAction,
     SignUp,
     Comparison,
-    Roadmap,
-    FourTiersWithToggle,
-    WithComparisonTable,
-    BrandPanel,
   },
 
   metaInfo() {
     return {
       title: this.$page.markdownPage.title,
     };
-  },
-  mounted() {
-    console.log(this.$page.markdownPage);
   },
 };
 </script>
