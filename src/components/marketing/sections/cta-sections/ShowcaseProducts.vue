@@ -20,10 +20,12 @@
       >
         <div class="m-auto max-w-sm rounded overflow-hidden">
           <div class="px-2">
+            <g-link :to="product.url">
             <g-image 
             class="py-1" 
             :src="img(product.image)" 
             />
+            </g-link>
             <!-- <div class="font-bold text-xl mb-2">{{ product.title }}</div> -->
             <p v-html="product.content" class="text-gray-700 text-base"></p>
           </div>
@@ -51,7 +53,7 @@ export default {
 .bannerFondo {
   height: 400px;
 }
-img {
+/* img {
   cursor: default !important;
-}
+} */
 </style>
