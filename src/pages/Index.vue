@@ -45,9 +45,13 @@
       />
     </div>
 
-    <g-image
+    <g-image class="hidden md:block"
       v-if="$page.markdownPage.solution_image2"
       :src="$page.markdownPage.solution_image2.src"
+    />
+     <g-image class="sm:hidden"
+      v-if="$page.markdownPage.solution_image4"
+      :src="$page.markdownPage.solution_image4.src"
     />
     <div class="container mx-auto">
       <Comparison2
@@ -106,6 +110,7 @@
         solution_image
         solution_image2
         solution_image3
+        solution_image4
         productsMain{
           id
           title
