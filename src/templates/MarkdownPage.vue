@@ -18,15 +18,20 @@
         v-if="$page.markdownPage.slides && $page.markdownPage.slides.length > 0"
       /> -->
 
+      <SignUp
+        v-if="$page.markdownPage.signup"
+        :signup="$page.markdownPage.signup"
+      />
+
       <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
 
-      <SolutionsHeader
+      <!-- <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
-      />
+      /> -->
 
       <!-- <NewCard
         v-for="card in $page.markdownPage.cards"
@@ -34,14 +39,14 @@
         :card="card"
       /> -->
 
-      <Comparison
+      <!-- <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
           $page.markdownPage.comparisonSecs.length > 0
         "
         :main="$page.markdownPage.comparisonMain"
         :sections="$page.markdownPage.comparisonSecs"
-      />
+      /> -->
 
       <ShowcaseProducts
         v-if="
@@ -52,19 +57,19 @@
         :products="$page.markdownPage.productData"
       />
 
-      <logoShowcase
+      <!-- <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
+      /> -->
+      
+      <g-image
+        v-if="$page.markdownPage.solution_image2"
+        :src="$page.markdownPage.solution_image2.src"
       />
 
       <CallToAction
         v-if="$page.markdownPage.cta"
         :cta="$page.markdownPage.cta"
-      />
-
-      <SignUp
-        v-if="$page.markdownPage.signup"
-        :signup="$page.markdownPage.signup"
       />
     </div>
   </Layout>
@@ -81,6 +86,7 @@
       #  header_title
       #  header_image
         solution_image
+        solution_image2
        header{
          title
          subtitle
