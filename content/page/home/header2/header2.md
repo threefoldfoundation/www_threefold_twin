@@ -1,11 +1,11 @@
 ---
-id: home_header
+id: data_manipulation_header
 title: ""
-subtitle: Finally, you are fully private and secure
+subtitle: The Hidden Costs of Data Manipulation
 btn1: "" #Get Lifetime Access Now
 link1: "" #link for button
 btn2: ""
 link2: "" #link for button
 ---
 
-The Digital Twin assures that only you own your data, and no one else. Access numerous applications while forever remaining fully secure and private.
+Most people are unaware of what happens to our data and how we can be affected by others controlling it.

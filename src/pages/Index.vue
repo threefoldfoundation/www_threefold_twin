@@ -15,11 +15,6 @@
       :signup="$page.markdownPage.signup"
     />
 
-      <!-- <SolutionsHeader
-        v-if="$page.markdownPage.header2"
-        :header="$page.markdownPage.header2"
-      /> -->
-
       <g-image
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
@@ -45,10 +40,21 @@
       />
     </div>
 
-    <g-image
+    <SolutionsHeader
+        v-if="$page.markdownPage.header2"
+        :header="$page.markdownPage.header2"
+    />
+
+    <Roadmap
+        v-if="$page.markdownPage.roadmap.length > 0"
+        :roadmap="$page.markdownPage.roadmap"
+    />
+
+    <!-- <g-image
       v-if="$page.markdownPage.solution_image2"
       :src="$page.markdownPage.solution_image2.src"
-    />
+    /> -->
+
     <div class="container mx-auto">
       <Comparison2
         v-if="
@@ -183,6 +189,11 @@
           image
           url
         }
+        roadmap{
+          id
+          title
+          excerpt
+        }
         inTheNews {
           id
           content
@@ -213,6 +224,7 @@ import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowcase.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
 import Comparison2 from "~/components/custom/sections/Comparison2.vue";
+import Roadmap from "~/components/custom/sections/Roadmap.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 
@@ -227,6 +239,7 @@ export default {
     Comparison,
     Comparison2,
     InTheNews,
+    Roadmap,
     SignUp,
   },
   metaInfo: {

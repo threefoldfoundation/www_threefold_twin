@@ -1,5 +1,5 @@
 ---
 id: app_1
 title: ''
-image : ./video_calls.png
+image : ./video_calls.svg
 ---

@@ -10,8 +10,9 @@ signup: home_cta
 solution_image: ./dt_apps.png
 productsMain: apps
 productData: [app_1, app_2, app_3, app_4, app_5, app_6]
-header: apps_button
 logos: [logo1, logo2, logo3, logo4, logo5, logo6]
+header2: data_manipulation_header
+roadmap: [post1, post2, post3, post4, post5]
 solution_image2: ./manipulation_cost.png
 comparisonMain2: comparison2
 comparisonSecs2: [sec1, sec2, sec3, sec4, sec5]

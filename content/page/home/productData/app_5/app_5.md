@@ -1,5 +1,5 @@
 ---
 id: app_5
 title: ''
-image : ./web_publisher.png
+image : ./web_publisher.svg
 ---
