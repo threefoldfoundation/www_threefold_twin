@@ -13,9 +13,9 @@ items:
  - title: ''
    links:
     - name: Terms&Conditions
-      link: https://wiki.threefold.io/#/terms_conditions_websites
+      link: https://new.threefold.io/info/legal#/legal__terms_conditions_websites
  - title: ''
    links:
     - name: PrivacyPolicy
-      link: https://wiki.threefold.io/#/privacypolicy
+      link: https://new.threefold.io/info/legal#/legal__privacypolicy
 ---
