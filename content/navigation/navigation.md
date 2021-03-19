@@ -2,7 +2,7 @@
 id: navigation
 navLinks:
   - name: Knowledge Base
-    link: http://wiki.twin.threefold.io/
+    link: http://new.threefold.io/info/twin
     external: true
     expandable: false
 
