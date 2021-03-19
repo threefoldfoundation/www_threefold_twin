@@ -21,4 +21,4 @@ comparisonSecs: [section1, section2, section3]
 solution_image3: ./pay_once.png
 solution_image4: ./roadmap_mobile.png
 cta: home_cta
----
+--- 
