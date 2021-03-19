@@ -3,7 +3,7 @@
     <h2 class="text-4xl mb-2 leading-tight font-semibold font-heading">
       {{ main.title }}
     </h2>
-    <p class="text-gray-600">{{ main.description }}</p>
+    <p class="text-gray-700">{{ main.description }}</p>
     <div class="flex flex-wrap items-center mx-8 mt-12 mb-2">
       <div
         class="lg:w-1/3 px-6 mb-2"

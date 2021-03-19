@@ -5,7 +5,7 @@
         <h2 class="text-6xl mb-6 leading-tight font-semibold font-heading">
           {{ title }}
         </h2>
-        <div class="mb-8 text-gray-700 leading-relaxed" v-html="content"></div>
+        <div class="mb-8 text-gray-800 leading-relaxed" v-html="content"></div>
         <div v-if="button">
           <a
             v-if="link.includes('http')"
