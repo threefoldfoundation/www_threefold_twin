@@ -1,14 +1,9 @@
 ---
 id: navigation
 navLinks:
-  - name: Wiki
+  - name: Knowledge Base
     link: http://wiki.twin.threefold.io/
     external: true
-    expandable: false
-  
-  - name: Blog
-    link: /blog
-    external: false
     expandable: false
 
   - name: Partners
@@ -16,19 +11,14 @@ navLinks:
     external: false
     expandable: false
 
-  - name: Community
-    link: https://forums.threefold.io/
-    external: true
+  - name: Team
+    link: /team
+    external: false
     expandable: false
     submenu:
       - title: ''
         path: ''
         external: true
-
-  - name: Team
-    link: /team
-    external: false
-    expandable: false
 
 social:
   - icon: ''
@@ -39,6 +29,16 @@ social:
 
   - name: Wiki
     link: http://wiki.twin.threefold.io/
+    external: true
+    expandable: false
+
+  - name: Blog
+    link: /blog
+    external: false
+    expandable: false
+
+  - name: Community
+    link: https://forums.threefold.io/
     external: true
     expandable: false
 
