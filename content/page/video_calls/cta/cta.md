@@ -1,7 +1,7 @@
 ---
 id: video_calls_cta
 title: ''
-button: 'Get Your DT' #Button was Get Your DT
+button: 'Coming Soon!' #Button was Get Your DT
 link: '' #Add button link here
 ---
 
