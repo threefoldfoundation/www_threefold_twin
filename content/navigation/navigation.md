@@ -1,6 +1,24 @@
 ---
 id: navigation
 navLinks:
+  - name: Experiences
+    link: ''
+    external: false
+    expandable: true
+    submenu:
+      - title: Video Calls
+        path: /video_calls
+      - title: File Storage
+        path: /filestorage
+      - title: Chat
+        path: /chat
+      - title: Office
+        path: /office
+      - title: Web Publisher
+        path: /web_publisher
+      - title: Payments
+        path: /payments
+
   - name: Knowledge Base
     link: http://new.threefold.io/info/twin
     external: true
