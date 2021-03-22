@@ -1,5 +1,5 @@
 ---
 id: web_4
 title: ''
-image : ./web_collaboration.svg
+image : ./web_collaboration.png
 ---

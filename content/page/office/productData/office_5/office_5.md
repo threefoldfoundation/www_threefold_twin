@@ -1,5 +1,5 @@
 ---
 id: office_5
 title: ''
-image : ./easy_access.svg
+image : ./easy_access.png
 ---

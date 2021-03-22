@@ -1,5 +1,5 @@
 ---
 id: chat_3
 title: ''
-image : ./secure_chat.svg
+image : ./secure_chat.png
 ---

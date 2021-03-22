@@ -1,5 +1,5 @@
 ---
 id: file_1
 title: ''
-image : ./compatibility.svg
+image : ./compatibility.png
 ---

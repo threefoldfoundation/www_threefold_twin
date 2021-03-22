@@ -1,5 +1,5 @@
 ---
 id: pay_5
 title: ''
-image : ./coming_soon.svg
+image : ./coming_soon.png
 ---

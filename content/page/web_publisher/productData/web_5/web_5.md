@@ -1,5 +1,5 @@
 ---
 id: web_5
 title: ''
-image : ./compatible.svg
+image : ./compatible.png
 ---

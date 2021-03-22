@@ -1,5 +1,5 @@
 ---
 id: file_2
 title: ''
-image : ./safety.svg
+image : ./safety.png
 ---

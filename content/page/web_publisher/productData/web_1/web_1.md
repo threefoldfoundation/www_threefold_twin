@@ -1,5 +1,5 @@
 ---
 id: web_1
 title: ''
-image : ./easy.svg
+image : ./easy.png
 ---

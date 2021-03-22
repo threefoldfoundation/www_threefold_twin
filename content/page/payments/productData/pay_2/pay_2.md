@@ -1,5 +1,5 @@
 ---
 id: pay_2
 title: ''
-image : ./autopay.svg
+image : ./autopay.png
 ---
