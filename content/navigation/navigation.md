@@ -20,7 +20,7 @@ navLinks:
         path: /payments
 
   - name: Knowledge Base
-    link: /info/digitaltwin
+    link: /info/twin
     external: true
     expandable: false
 
