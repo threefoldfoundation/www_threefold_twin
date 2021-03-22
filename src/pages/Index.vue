@@ -7,7 +7,7 @@
         :altImg="$page.markdownPage.header_altImg"
         :content="$page.markdownPage.header_excerpt"
         :button="$page.markdownPage.button"
-        :link="$page.markdownPage.link"
+        :link="$url($page.markdownPage.link)"
       />
 
       <SignUp
