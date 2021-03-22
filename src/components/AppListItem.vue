@@ -131,4 +131,9 @@ export default {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 768px) {
+  .app {
+    flex: 1 1 auto;
+  }
+}
 </style>
