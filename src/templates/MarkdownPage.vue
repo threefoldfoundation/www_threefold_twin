@@ -47,21 +47,21 @@
         :main="$page.markdownPage.comparisonMain"
         :sections="$page.markdownPage.comparisonSecs"
       /> -->
-
-      <ShowcaseProducts
-        v-if="
-          $page.markdownPage.productData &&
-          $page.markdownPage.productData.length > 0
-        "
-        :main="$page.markdownPage.productsMain"
-        :products="$page.markdownPage.productData"
-      />
+      <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
+        <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
+          <AppListItem
+            v-for="product in $page.markdownPage.productData"
+            :key="product.id"
+            :app="product"
+          />
+        </div>
+      </div>
 
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
       /> -->
-      
+
       <g-image
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
@@ -164,6 +164,7 @@ import logoShowcase from "~/components/marketing/sections/cta-sections/logoShowc
 import CallToAction from "~/components/custom/sections/CallToAction.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
 import Comparison from "~/components/custom/sections/Comparison.vue";
+import AppListItem from "~/components/AppListItem.vue";
 
 export default {
   components: {
@@ -176,6 +177,7 @@ export default {
     CallToAction,
     SignUp,
     Comparison,
+    AppListItem,
   },
 
   metaInfo() {
