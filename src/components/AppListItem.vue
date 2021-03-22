@@ -1,6 +1,6 @@
 <template>
-  <div class="flex app px-0 sm:px-4 pb-8 mb-8">
-    <div class="post-card-image-link">
+  <div class="flex app px-0 sm:px-4 pb-4">
+    <div class="post-card-image-link px-1">
       <g-image
         :src="img(app.image)"
         :alt="app.title"

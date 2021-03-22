@@ -1,5 +1,5 @@
 ---
 id: sec4
 title: ''
-image : ./secure.svg
+image : ./secure.png
 ---

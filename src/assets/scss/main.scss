@@ -111,8 +111,8 @@ ul {
 
 .app {
     flex: 1 1 50%;
-    @apply border-b;
-    @apply border-b-gray-300;
+    // @apply border-b;
+    // @apply border-b-gray-300;
     @apply flex-col;
     @apply w-full;
     .post-card-image {
