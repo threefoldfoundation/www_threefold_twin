@@ -20,7 +20,7 @@ navLinks:
         path: /payments
 
   - name: Knowledge Base
-    link: http://new.threefold.io/info/twin
+    link: /info/twin
     external: true
     expandable: false
 
