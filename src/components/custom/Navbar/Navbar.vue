@@ -10,7 +10,6 @@
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <div class="inline-flex items-center flex-shrink-0">
           <a :href="$url('/')" class="flex">
-        
             <g-image
               :src="require(`!!assets-loader!@images/twin_logo.svg`)"
               class="mr-3 fill-current logo"
@@ -151,20 +150,20 @@
             </div>
           </div>
 
-          <g-link
+          <a
             v-else-if="element.external"
-            :to="element.link"
+            :href="element.link"
             @click="clicked"
             target="_blank"
             class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
-            >{{ element.name }}</g-link
+            >{{ element.name }}</a
           >
-          <g-link
+          <a
             v-else
-            :to="element.link"
+            :href="element.link"
             @click="clicked"
             class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
-            >{{ element.name }}</g-link
+            >{{ element.name }}</a
           >
         </div>
         <!-- <div
