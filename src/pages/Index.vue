@@ -20,7 +20,7 @@
         :header="$page.markdownPage.header2"
       /> -->
 
-      <g-image
+      <g-image class="m-auto mt-16"
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
