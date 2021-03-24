@@ -23,7 +23,7 @@
         :signup="$page.markdownPage.signup"
       />
 
-      <g-image
+      <g-image class="m-auto"
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
@@ -62,7 +62,7 @@
         :logos="$page.markdownPage.logos"
       /> -->
 
-      <g-image
+      <g-image class="m-auto px-6 py-4"
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
       />
