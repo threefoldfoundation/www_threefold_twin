@@ -11,16 +11,17 @@
       />
 
       <SignUp
-      v-if="$page.markdownPage.signup"
-      :signup="$page.markdownPage.signup"
-    />
+        v-if="$page.markdownPage.signup"
+        :signup="$page.markdownPage.signup"
+      />
 
       <!-- <SolutionsHeader
         v-if="$page.markdownPage.header2"
         :header="$page.markdownPage.header2"
       /> -->
 
-      <g-image class="m-auto mt-16"
+      <g-image
+        class="m-auto mt-16"
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
@@ -33,7 +34,7 @@
           $page.markdownPage.productData.length > 0
         "
       />
-      
+
       <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
@@ -45,11 +46,13 @@
       />
     </div>
 
-    <g-image class="hidden md:block"
+    <g-image
+      class="hidden md:block"
       v-if="$page.markdownPage.solution_image2"
       :src="$page.markdownPage.solution_image2.src"
     />
-     <g-image class="sm:hidden"
+    <g-image
+      class="sm:hidden"
       v-if="$page.markdownPage.solution_image4"
       :src="$page.markdownPage.solution_image4.src"
     />
@@ -237,7 +240,14 @@ export default {
   },
   metaInfo: {
     title: "",
-    titleTemplate: "DigitalTwin",
+    titleTemplate: "Digital Twin | Own Your Data",
+    meta: [
+      {
+        name: "description",
+        content:
+          "The Digital Twin assures that only you own your data, and no one else. Access numerous applications while forever remaining fully secure and private.",
+      },
+    ],
   },
 };
 </script>
