@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <!-- <TagFilterHeader
+    <TagFilterHeader
       :tags="tags"
       :selected="selected"
       v-if="$page.tags.edges.length > 1"
-    /> -->
+    />
 
     <div class="container mt-8 sm:pxi-0 mx-auto overflow-x-hidden">
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
@@ -38,7 +38,7 @@
 
 <page-query>
 query($page: Int){
-  entries: allProject (perPage: 10, page: $page, sortBy: "rank", order: DESC, filter: { tags: { id: {in: ["twin"]}}})@paginate{
+  entries: allProject (perPage: 10, page: $page, sortBy: "rank", order: DESC, filter: { tags: { id: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}})@paginate{
     totalCount
     pageInfo {
       totalPages
@@ -70,7 +70,7 @@ query($page: Int){
     }
   }
   
-  tags: allProjectTag (filter: { title: {in: ["twin"]}}) {
+  tags: allProjectTag (filter: { title: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}) {
      edges{
       node{
         id
