@@ -28,15 +28,10 @@ navLinks:
     link: /partners
     external: false
     expandable: false
-
-  - name: Team
-    link: /team
-    external: false
-    expandable: false
     submenu:
       - title: ''
         path: ''
-        external: true
+        external: false
 
 social:
   - icon: ''
@@ -59,6 +54,15 @@ social:
     link: https://forums.threefold.io/
     external: true
     expandable: false
+
+  - name: Team
+    link: /team
+    external: false
+    expandable: false
+    submenu:
+      - title: ''
+        path: ''
+        external: true
 
 -->
 
