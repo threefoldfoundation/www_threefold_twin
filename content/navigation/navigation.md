@@ -6,12 +6,12 @@ navLinks:
     external: false
     expandable: true
     submenu:
-      - title: Video Calls
-        path: /video_calls
-      - title: File Storage
-        path: /filestorage
       - title: Chat
         path: /chat
+      - title: Meet
+        path: /meet
+      - title: File Storage
+        path: /filestorage
       - title: Office
         path: /office
       - title: Web Publisher
@@ -19,7 +19,7 @@ navLinks:
       - title: Payments
         path: /payments
 
-  - name: Knowledge Base
+  - name: Learn
     link: /info/twin
     external: true
     expandable: false
@@ -42,16 +42,6 @@ social:
 
   - name: Wiki
     link: http://wiki.twin.threefold.io/
-    external: true
-    expandable: false
-
-  - name: Blog
-    link: /blog
-    external: false
-    expandable: false
-
-  - name: Community
-    link: https://forums.threefold.io/
     external: true
     expandable: false
 
