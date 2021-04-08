@@ -85,6 +85,8 @@
         :cta="$page.markdownPage.cta"
       />
 
+      <div id="qex-widget"></div>
+
       <!-- <NewCard
       v-for="card in $page.markdownPage.cards"
       :key="card.id"
@@ -249,5 +251,26 @@ export default {
       },
     ],
   },
+  mounted() {
+        var elem = document.getElementById("qex-widget");
+        const qexPlugin = new LiquidQex.QexWidgetApi(elem);
+        qexPlugin.init({
+          "public_api_key": "pk_sandbox_7981c5dd-5e9f-49a5-af29-b751c9c8a047",
+          "config_version": "1.1",
+          "payout_default": {
+            "currency": "TFT",
+            "quantity": "1000",
+            "currency_scheme": "FIAT",
+            "currency_options": ["TFT"]
+          },
+          "payout_settlement": {
+            "method": "BLOCKCHAIN_TRANSFER",
+            "currency": "TFT"
+          },
+          
+        });
+      }
 };
+        
+
 </script>
