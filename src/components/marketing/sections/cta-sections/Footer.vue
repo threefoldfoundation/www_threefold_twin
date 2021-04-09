@@ -4,9 +4,9 @@
 -->
 <template>
   <footer class="bg-white">
-   <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div class="max-w-md mx-auto">
-        <!-- <div class="space-y-8 xl:col-span-1">
+    <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div class="xl:grid xl:grid-cols-4 xl:gap-2">
+        <div class="space-y-8 xl:col-span-1">
           <g-image
             class="h-10"
             :src="require(`!!assets-loader!@images/twin_icon.svg`)"
@@ -21,7 +21,7 @@
             v-else
           />
 
-          <p class="text-gray-500 text-base leading-6">
+          <p class="text-gray-500 text-base text-center leading-6">
             {{ record.description }}
           </p>
           <div class="flex space-x-6">
@@ -119,9 +119,9 @@
               </svg>
             </a>
           </div>
-        </div> -->
-        <!-- <div
-          class="mt-12 grid md:grid-cols-2 sm:grid-cols-2 xl:mt-0 xl:col-span-2 text-center"
+        </div>
+        <div
+          class="mt-12 grid md:grid-cols-4 sm:grid-cols-2 xl:mt-0 xl:col-span-3"
         >
           <div
             v-for="(footerLink, index) in record.items"
@@ -155,7 +155,7 @@
               </ul>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
       <div class="border-t border-gray-200 pt-8">
         <p class="text-base leading-6 text-gray-400 xl:text-center">

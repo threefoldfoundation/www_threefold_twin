@@ -29,7 +29,7 @@ navLinks:
     external: false
     expandable: false
  
-   - name: More
+  - name: More
     link: ''
     external: false
     expandable: true
@@ -46,8 +46,8 @@ navLinks:
         path: 'mailto:info@mydigitaltwin.com'
 
 social:
-  - icon: ''
-    link: '' #telegaram link
+  - icon: telegram-plane
+    link: https://t.me/joinchat/JnJfqY9tfAU1NTY0
 ---
 
 <!--
