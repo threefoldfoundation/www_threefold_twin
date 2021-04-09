@@ -28,10 +28,22 @@ navLinks:
     link: /partners
     external: false
     expandable: false
+ 
+   - name: More
+    link: ''
+    external: false
+    expandable: true
     submenu:
-      - title: ''
-        path: ''
-        external: false
+      - title: Community
+        path: https://t.me/joinchat/JnJfqY9tfAU1NTY0
+        external: true
+      - title: Blog
+        path: /blog       
+      - title: Forum
+        path: https://forum.threefold.io/c/digital-twin/45
+        external: true
+      - title: Contact Us
+        path: 'mailto:info@mydigitaltwin.com'
 
 social:
   - icon: ''
