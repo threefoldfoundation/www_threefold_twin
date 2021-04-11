@@ -19,9 +19,6 @@
           :key="post.node.id"
           :record="post.node"
         />
-        <div class="text-center mx-auto" v-if="blogs.edges.length == 0">
-          <h2 class="flex text-gray-700 w-3/4">No results</h2>
-        </div>
       </div>
 
       <div class="pagination flex justify-center mb-8">
@@ -30,7 +27,7 @@
           :currentPage="blogs.pageInfo.currentPage"
           :totalPages="blogs.pageInfo.totalPages"
           :maxVisibleButtons="5"
-          v-if="blogs.pageInfo.totalPages > 1 && blogs.edges.length > 0"
+          v-if="blogs.pageInfo.totalPages > 1 && blogs.edges.length >= 10"
         />
       </div>
     </div>
@@ -39,7 +36,7 @@
 <page-query>
 
 query($page: Int){
-  entries: allBlog(perPage: 10, page: $page, sortBy: "created", order: DESC, filter: {category: { id: {in: ["twin"]}}}) @paginate{
+  entries: allBlog(perPage: 10, page: $page, sortBy: "created", order: DESC, filter: {category: { contains: ["twin"]}}) @paginate{
     totalCount
     pageInfo {
       totalPages

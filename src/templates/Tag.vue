@@ -9,12 +9,10 @@
     <div class="container sm:px-0 mx-auto overflow-x-hidden pt-12">
       <div class="mx-4 sm:mx-0">
         <h1 class="pb-0 mb-0 text-5xl font-medium capitalize">
-          {{ tags.title.replace("_", " ") }}
+          {{ tags.title }}
         </h1>
         <p class="text-gray-700 text-xl">
-          <span class="self-center"
-            >{{ tags.belongsTo.totalCount }} {{ item }}</span
-          >
+          <span class="self-center">{{ items.length }} {{ item }}</span>
         </p>
       </div>
 
@@ -22,12 +20,15 @@
 
       <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
-          v-for="edge in tags.belongsTo.edges"
-          :key="edge.node.id"
-          :record="edge.node"
+          :showtags="true"
+          v-for="item in items"
+          :key="item.id"
+          :record="item"
         />
       </div>
-
+      <div class="text-center" v-if="items.length == 0">
+        <h2 class="inlibe-flex mx-auto text-gray-700 w-3/4">No results</h2>
+      </div>
       <div class="pagination flex justify-center mb-8">
         <Pagination
           :baseUrl="tags.path"
@@ -60,7 +61,12 @@
               image(width:800)
               path
               datetime : created
-              
+              category
+              tags{
+                id
+                title
+                path
+              }
             }
           }
         }
@@ -130,13 +136,13 @@
     }
 
     allProjectTag(filter: { title: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}){
-      edges{
-        node{
-          id
-          title
-          path
-        }
+     edges{
+      node{
+        id
+        title
+        path
       }
+    }
     }
 
     allNewsTag{
@@ -218,6 +224,17 @@ export default {
         if (plural) return "posts";
         return "post";
       }
+    },
+    items() {
+      let twinItems = [];
+      this.tags.belongsTo.edges.map((edge) => {
+        if (Array.isArray(edge.node.category)) {
+          if (edge.node.category.includes("twin")) twinItems.push(edge.node);
+        } else {
+          twinItems.push(edge.node);
+        }
+      });
+      return twinItems;
     },
   },
 
