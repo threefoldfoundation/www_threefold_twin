@@ -60,7 +60,7 @@
         class="post-content container mx-auto relative font-serif text-gray-700"
       >
         <div
-          class="post-content-text text-xl"
+          class="post-content-text mx-4 text-xl"
           v-html="$page.person.content"
         ></div>
       </section>
