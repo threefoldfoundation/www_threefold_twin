@@ -1,6 +1,11 @@
 ---
 id: navigation
 navLinks:
+  - name: Why
+    link: /why
+    external: false
+    expandable: false
+
   - name: Experiences
     link: ''
     external: false
