@@ -1,6 +1,8 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto min-h-screen overflow-x-hidden pt-24">
+    <div
+      class="container sm:pxi-0 mx-auto min-h-screen overflow-x-hidden pt-24"
+    >
       <div class="flex flex-row flex-wrap items-center mx-4 sm:mx-0">
         <div class="w-full md:w-1/6 mx-auto sm:mx-0">
           <g-image
@@ -24,33 +26,37 @@
           <p class="text-gray-700 text-xl" v-if="$page.person.bio">
             {{ $page.person.bio }}
           </p>
-          <div class="author-social">
-            
-          </div>
-                <section>
-        <div class="avatars">
-          <div class="flex items-center">
-            <div class="flex justify-between items-center">
-              <ul class="list-none flex author-list m-0 py-2">
-                <li
-                  v-for="project in $page.person.projects"
-                  :key="project.id"
-                  class="author-list-item"
-                >
-                  <g-link :to="project.path" v-tooltip="project.title">
-                    <g-image
-                      :src="project.logo"
-                      :alt="project.title"
-                      class="w-20 h-20 rounded-full bg-gray-200 border-2 border-white"
-                    />
-                  </g-link>
-                </li>
-              </ul>
+          <div class="author-social"></div>
+          <section>
+            <div class="avatars">
+              <div class="flex items-center">
+                <div class="flex justify-between items-center">
+                  <ul class="list-none flex author-list m-0 py-2">
+                    <li
+                      v-for="project in $page.person.projects"
+                      :key="project.id"
+                      class="author-list-item"
+                    >
+                      <g-link :to="project.path" v-tooltip="project.title">
+                        <g-image
+                          :src="project.logo"
+                          :alt="project.title"
+                          class="w-20 h-20 rounded-full bg-gray-200 border-2 border-white"
+                        />
+                      </g-link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            
-          </div>
-        </div>
-      </section>
+            <g-link
+              v-for="membership in $page.person.memberships"
+              :key="membership.id"
+              :to="membership.path"
+              class="text-xs bg-transparent hover:text-blue-700 py-2 px-4 mr-2 border hover:border-blue-500 border-gray-600 text-gray-700 rounded-full"
+              >{{ membership.title }}</g-link
+            >
+          </section>
         </div>
       </div>
 
@@ -60,13 +66,13 @@
         class="post-content container mx-auto relative font-serif text-gray-700"
       >
         <div
-          class="post-content-text mx-4 text-xl"
+          class="post-content-text text-xl"
           v-html="$page.person.content"
         ></div>
       </section>
 
-      <!-- <div class="pt-8 border-b mx-4 sm:-mx-4"></div>
-
+      <div class="pt-8 border-b mx-4 sm:-mx-4"></div>
+      <!-- 
       <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
           v-for="edge in $page.person.belongsTo.edges"
@@ -74,8 +80,6 @@
           :record="edge.node"
         />
       </div> -->
-
-   
     </div>
   </Layout>
 </template>
@@ -144,7 +148,7 @@
       }
     }
 
-     memberships: allMembership(filter: {title: {in: ["twin"]}}){
+     memberships: allMembership{
      edges{
       node{
         id
@@ -171,17 +175,17 @@ export default {
       return pluralize("post", this.$page.person.belongsTo.totalCount);
     },
 
-    memberships(){
-      var all = []
-      this.$page.memberships.edges.forEach((edgs) => all.push(edge.node.title))
-      var res = []
-      this.$page.person.memberships.forEach(function(membership){
-        if (all.includes(membership.title)){
-          res.push(membership)
+    memberships() {
+      var all = [];
+      this.$page.memberships.edges.forEach((edgs) => all.push(edge.node.title));
+      var res = [];
+      this.$page.person.memberships.forEach(function (membership) {
+        if (all.includes(membership.title)) {
+          res.push(membership);
         }
       });
-      return res
-    }
+      return res;
+    },
   },
   metaInfo() {
     return {

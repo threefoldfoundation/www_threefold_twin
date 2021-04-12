@@ -204,7 +204,7 @@ module.exports = {
                     plans: 'Plans',
                     inTheNews: 'InTheNews',
                     brandPanel: 'BrandPanel',
-                    allSlides : 'About'
+                    allSlides: 'About'
                 }
             }
         },
@@ -268,7 +268,7 @@ module.exports = {
         },
 
         {
-             use: '@gridsome/source-filesystem',
+            use: '@gridsome/source-filesystem',
             options: {
                 typeName: 'News',
                 path: './content/news/**/*.md',
@@ -387,7 +387,7 @@ module.exports = {
         }],
 
         Membership: [{
-            path: '/team/memberships/:id',
+            path: '/people/memberships/:id',
             component: '~/templates/Membership.vue'
         }],
 
@@ -402,11 +402,11 @@ module.exports = {
         }],
 
         Person: [{
-            path: '/team/:id',
+            path: '/people/:id',
             component: '~/templates/Person.vue'
         }],
         PersonTag: [{
-            path: '/team/tags/:id',
+            path: '/people/tags/:id',
             component: '~/templates/Tag.vue'
         }],
 

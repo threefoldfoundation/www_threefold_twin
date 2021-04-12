@@ -58,7 +58,7 @@ social:
     expandable: false
 
   - name: Team
-    link: /team
+    link: /people
     external: false
     expandable: false
     submenu:

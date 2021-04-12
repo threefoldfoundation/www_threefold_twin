@@ -8,6 +8,7 @@
     <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
       <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
+          :showtags="true"
           v-for="person in $page.entries.edges"
           :key="person.id"
           :record="person.node"
@@ -55,6 +56,11 @@ query($page: Int){
         cities
         image(width:800)
         private
+        memberships{
+          id
+          title
+          path
+        }
       }
     }
   }
@@ -89,7 +95,7 @@ export default {
   },
   computed: {
     memberships() {
-      var res = [{ title: "All", path: "/team" }];
+      var res = [{ title: "All", path: "/people" }];
       this.$page.memberships.edges.forEach((edge) =>
         res.push({ title: edge.node.title, path: edge.node.path })
       );
@@ -101,7 +107,7 @@ export default {
       return name;
     },
     baseurl() {
-      return "/team/";
+      return "/people/";
     },
   },
 };
