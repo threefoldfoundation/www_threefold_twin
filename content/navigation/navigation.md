@@ -40,7 +40,7 @@ navLinks:
       - title: Blog
         path: /blog       
       - title: Forum
-        path: https://forum.threefold.io/c/digital-twin/45
+        path: https://forum.mydigitaltwin.io/
         external: true
       - title: Contact Us
         path: 'mailto:info@mydigitaltwin.com'

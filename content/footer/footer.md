@@ -63,7 +63,7 @@ items:
     - name: Blog
       link: /blog
     - name: Forum
-      link: https://forum.threefold.io/c/digital-twin/45
+      link: https://forum.mydigitaltwin.io/
       external: true
     - name: Contact Us
       link: 'mailto:info@mydigitaltwin.com'
