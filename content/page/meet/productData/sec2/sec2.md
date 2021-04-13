@@ -1,5 +1,5 @@
 ---
 id: sec2
 title: ''
-image : ./be_together.png
+image : ./be_together2.png
 ---
