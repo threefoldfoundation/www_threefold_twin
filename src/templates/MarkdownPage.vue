@@ -81,7 +81,7 @@
         :id="$page.markdownPage.cta2.id"
       />
 
-      <CallToAction
+      <CallToAction class="mt-10"
         v-if="$page.markdownPage.cta3"
         :cta="$page.markdownPage.cta3"
         :id="$page.markdownPage.cta3.id"

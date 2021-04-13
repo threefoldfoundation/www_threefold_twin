@@ -38,7 +38,7 @@
         v-if="cta.image"
         :src="img"
         :alt="cta.title"
-        class="py-10 w-1/3 mx-auto"
+        class="py-10 md:w-1/3 mx-auto"
       ></g-image>
     </section>
 
