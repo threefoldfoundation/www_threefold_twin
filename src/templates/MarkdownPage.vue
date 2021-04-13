@@ -59,6 +59,17 @@
         v-if="$page.markdownPage.brandPanel"
       />
 
+      <CallToAction
+        v-if="$page.markdownPage.p2pCTA"
+        :cta="$page.markdownPage.p2pCTA"
+      />
+
+      <g-image
+        class="m-auto"
+        v-if="$page.markdownPage.solution_image4"
+        :src="$page.markdownPage.solution_image4.src"
+      />
+
       <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
         <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
           <AppListItem
@@ -101,6 +112,7 @@
         solution_image
         solution_image2
         solution_image3
+        solution_image4
         button
         link
        header{
@@ -158,6 +170,13 @@
           link
         }
         whyCTA {
+          id
+          title
+          content
+          button
+          link
+        }
+        p2pCTA {
           id
           title
           content

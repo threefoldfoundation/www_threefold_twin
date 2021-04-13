@@ -7,8 +7,10 @@ header_excerpt: Today, online privacy and security are badly compromised. Peer-t
 button: Know More #Get Lifetime Access Now
 link: "" #link for button
 solution_image3: ./half-globe.png
+solution_image4: ./p2p_network.png
 comparisonMain: why_comparison
 comparisonSecs: [private, secure, sustainable]
 whyCTA: why_cta
 brandPanel: why_brandPanel
+p2pCTA: p2p_cta
 ---
