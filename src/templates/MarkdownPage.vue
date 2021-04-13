@@ -32,7 +32,7 @@
         :card="card"
       /> -->
 
-      <Comparison
+      <Comparison class="my-20"
         v-if="
           $page.markdownPage.comparisonSecs &&
           $page.markdownPage.comparisonSecs.length > 0
@@ -42,7 +42,7 @@
         :sections="$page.markdownPage.comparisonSecs"
       />
 
-      <CallToAction
+      <CallToAction class="mt-20"
         v-if="$page.markdownPage.whyCTA"
         :cta="$page.markdownPage.whyCTA"
       />
@@ -65,7 +65,7 @@
       />
 
       <g-image
-        class="m-auto"
+        class="m-auto w-1/2"
         v-if="$page.markdownPage.solution_image4"
         :src="$page.markdownPage.solution_image4.src"
       />

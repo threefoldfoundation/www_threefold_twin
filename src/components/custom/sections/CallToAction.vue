@@ -6,7 +6,7 @@
       </h2>
       <div
         v-html="cta.content"
-        class="text-2xl mt-2 mb-8 text-gray-900 leading-relaxed"
+        class="text-gray-700"
       ></div>
       <g-link
         v-if="cta.button"
