@@ -1,7 +1,7 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-       <Header
+      <Header
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
         :altImg="$page.markdownPage.header_altImg"
@@ -10,17 +10,13 @@
         :link="$url($page.markdownPage.link)"
       />
 
-      <!-- <VerticalNav
-        :slides="$page.markdownPage.slides"
-        v-if="$page.markdownPage.slides && $page.markdownPage.slides.length > 0"
-      /> -->
-
       <SignUp
         v-if="$page.markdownPage.signup"
         :signup="$page.markdownPage.signup"
       />
 
-      <g-image class="m-auto"
+      <g-image
+        class="m-auto"
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
@@ -36,14 +32,14 @@
         :card="card"
       /> -->
 
-      <!-- <Comparison
+      <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
           $page.markdownPage.comparisonSecs.length > 0
         "
         :main="$page.markdownPage.comparisonMain"
         :sections="$page.markdownPage.comparisonSecs"
-      /> -->
+      />
       <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
         <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
           <AppListItem
@@ -59,7 +55,8 @@
         :logos="$page.markdownPage.logos"
       /> -->
 
-      <g-image class="m-auto px-6 py-4"
+      <g-image
+        class="m-auto px-6 py-4"
         v-if="$page.markdownPage.solution_image2"
         :src="$page.markdownPage.solution_image2.src"
       />
@@ -84,6 +81,8 @@
         header_image
         solution_image
         solution_image2
+        button
+        link
        header{
          title
          subtitle
@@ -117,7 +116,7 @@
         comparisonMain{
           id
           title
-          description
+          content
           button
           link
         }

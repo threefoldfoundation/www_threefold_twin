@@ -39,5 +39,8 @@ export default {
       return this.image;
     },
   },
+  mounted(){
+    console.log(this.link)
+  }
 };
 </script>

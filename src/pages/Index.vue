@@ -75,7 +75,8 @@
         :sections="$page.markdownPage.comparisonSecs"
       />
 
-      <g-image class="m-auto px-6 py-4"
+      <g-image
+        class="m-auto px-6 py-4"
         v-if="$page.markdownPage.solution_image3"
         :src="$page.markdownPage.solution_image3.src"
       />
@@ -157,7 +158,7 @@
         comparisonMain{
           id
           title
-          description
+          content
           button
           link
         }
@@ -170,7 +171,7 @@
         comparisonMain2{
           id
           title
-          description
+          content
           button
           link
         }
