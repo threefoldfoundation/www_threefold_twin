@@ -105,8 +105,16 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
-                typeName: 'Cta',
+                typeName: 'Cta2',
                 path: './content/page/**/cta2/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'Cta3',
+                path: './content/page/**/cta3/*.md',
             }
         },
 
@@ -208,7 +216,8 @@ module.exports = {
                     logos: 'Logo',
                     cta: 'Cta',
                     whyCTA: 'Cta',
-                    p2pCTA: 'Cta',
+                    cta2: 'Cta2',
+                    cta3: 'Cta3',
                     signup: 'SignUp',
                     comparisonMain: 'ComparisonMain',
                     comparisonSecs: 'Comparison',

@@ -60,8 +60,8 @@
       />
 
       <CallToAction
-        v-if="$page.markdownPage.p2pCTA"
-        :cta="$page.markdownPage.p2pCTA"
+        v-if="$page.markdownPage.cta2"
+        :cta="$page.markdownPage.cta2"
       />
 
       <g-image
@@ -96,6 +96,19 @@
         :cta="$page.markdownPage.cta"
       />
     </div>
+    <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden py-5">
+      <CallToAction
+        v-if="$page.markdownPage.cta3"
+        :cta="$page.markdownPage.cta3"
+        :id="$page.markdownPage.id"
+      />
+
+      <g-image
+        class="m-auto"
+        v-if="$page.markdownPage.solution_image5"
+        :src="$page.markdownPage.solution_image5.src"
+      />
+    </div>
   </Layout>
 </template>
 
@@ -113,6 +126,7 @@
         solution_image2
         solution_image3
         solution_image4
+        solution_image5
         button
         link
        header{
@@ -176,12 +190,20 @@
           button
           link
         }
-        p2pCTA {
+        cta2 {
           id
           title
           content
           button
           link
+        }
+        cta3 {
+          id
+          title
+          content
+          button
+          link
+          image
         }
         signup{
           id
@@ -282,5 +304,13 @@ export default {
 /* Adjust the position of the line numbers */
 .gridsome-highlight pre[class*="language-"].line-numbers {
   padding-left: 2.8em;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 </style>

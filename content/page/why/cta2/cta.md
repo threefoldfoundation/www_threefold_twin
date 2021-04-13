@@ -1,8 +1,8 @@
 ---
 id: p2p_cta
-title: The current internet structure simply cannot provide this level of security
-button: #Button was Get Your DT
-link: #Add button link here
+title: P2P Networks are the Only Real Solution
+button: "" #Button was Get Your DT
+link: "" #Add button link here
 ---
 
-All your key data is currently stored in data centers which are located in developed and wealthy countries. Your photos, emails, chats, videos and every single part of your digital identity is tracked and stored by someone else.
+P2P networks allow the decentralization of information across many different storage points. This essentially eliminates the need for intermediaries and allows direct communication from one person to another without data security and privacy being jeopardized..

@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 px-4 text-center">
+  <section class="py-12 px-0 text-center">
     <div class="w-full max-w-2xl mx-auto">
       <h2 class="text-4xl leading-tight font-semibold font-heading">
         {{ cta.title }}
@@ -15,11 +15,24 @@
         >{{ cta.button }}</g-link
       >
     </div>
+    <g-image
+      v-if="cta.image"
+      :src="img"
+      :alt="cta.title"
+      class="mt-10 w-full"
+    ></g-image>
   </section>
 </template>
 
 <script>
 export default {
   props: ["cta"],
+  computed: {
+    img() {
+      if (!this.cta.image) return "";
+      if (this.cta.image.src) return this.cta.image.src;
+      return this.cta.image;
+    },
+  },
 };
 </script>
