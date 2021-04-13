@@ -199,6 +199,7 @@ module.exports = {
                     features: 'Features',
                     logos: 'Logo',
                     cta: 'Cta',
+                    whyCTA: 'Cta',
                     signup: 'SignUp',
                     comparisonMain: 'ComparisonMain',
                     comparisonSecs: 'Comparison',

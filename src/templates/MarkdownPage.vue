@@ -40,6 +40,18 @@
         :main="$page.markdownPage.comparisonMain"
         :sections="$page.markdownPage.comparisonSecs"
       />
+
+      <CallToAction
+        v-if="$page.markdownPage.whyCTA"
+        :cta="$page.markdownPage.whyCTA"
+      />
+
+      <g-image
+        class="m-auto"
+        v-if="$page.markdownPage.solution_image3"
+        :src="$page.markdownPage.solution_image3.src"
+      />
+
       <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
         <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
           <AppListItem
@@ -81,6 +93,7 @@
         header_image
         solution_image
         solution_image2
+        solution_image3
         button
         link
        header{
@@ -131,6 +144,13 @@
           image
         }
         cta{
+          id
+          title
+          content
+          button
+          link
+        }
+        whyCTA {
           id
           title
           content
