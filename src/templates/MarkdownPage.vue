@@ -65,7 +65,7 @@
       />
 
       <g-image
-        class="m-auto"
+        class="m-auto w-1/2"
         v-if="$page.markdownPage.solution_image4"
         :src="$page.markdownPage.solution_image4.src"
       />
