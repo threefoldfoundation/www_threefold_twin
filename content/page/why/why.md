@@ -10,4 +10,5 @@ solution_image3: ./half-globe.png
 comparisonMain: why_comparison
 comparisonSecs: [private, secure, sustainable]
 whyCTA: why_cta
+brandPanel: why_brandPanel
 ---
