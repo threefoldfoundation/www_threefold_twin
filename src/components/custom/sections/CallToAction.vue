@@ -17,7 +17,7 @@
         v-if="cta.image"
         :src="img"
         :alt="cta.title"
-        class="py-10 w-full"
+        class="py-10 w-full mt-20"
       ></g-image>
     </section>
 
