@@ -6,9 +6,6 @@ header_altImg: digitaltwin
 header_excerpt: Today, online privacy and security are badly compromised. Peer-to-peer models empower communities with equality, sovereignty and resiliency. the Digital Twin uses the power of P2P network to provide you with unprecedented security.
 button: Know More #Get Lifetime Access Now
 link: "" #link for button
-solution_image3: ./half-globe.png
-solution_image4: ./p2p_network.png
-solution_image5: ./life_now.jpg
 comparisonMain: why_comparison
 comparisonSecs: [private, secure, sustainable]
 whyCTA: why_cta

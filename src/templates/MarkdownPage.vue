@@ -1,38 +1,40 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-      <Header
-        :title="$page.markdownPage.header_title"
-        :image="$page.markdownPage.header_image"
-        :altImg="$page.markdownPage.header_altImg"
-        :content="$page.markdownPage.header_excerpt"
-        :button="$page.markdownPage.button"
-        :link="$url($page.markdownPage.link)"
-      />
+    <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden py-5">
+      <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+        <Header
+          :title="$page.markdownPage.header_title"
+          :image="$page.markdownPage.header_image"
+          :altImg="$page.markdownPage.header_altImg"
+          :content="$page.markdownPage.header_excerpt"
+          :button="$page.markdownPage.button"
+          :link="$url($page.markdownPage.link)"
+        />
 
-      <SignUp
-        v-if="$page.markdownPage.signup"
-        :signup="$page.markdownPage.signup"
-      />
+        <SignUp
+          v-if="$page.markdownPage.signup"
+          :signup="$page.markdownPage.signup"
+        />
 
-      <g-image
-        class="m-auto"
-        v-if="$page.markdownPage.solution_image"
-        :src="$page.markdownPage.solution_image.src"
-      />
+        <g-image
+          class="m-auto"
+          v-if="$page.markdownPage.solution_image"
+          :src="$page.markdownPage.solution_image.src"
+        />
 
-      <!-- <SolutionsHeader
+        <!-- <SolutionsHeader
         v-if="$page.markdownPage.header"
         :header="$page.markdownPage.header"
       /> -->
 
-      <!-- <NewCard
+        <!-- <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
         :card="card"
       /> -->
+      </div>
 
-      <Comparison class="my-20"
+      <Comparison
         v-if="
           $page.markdownPage.comparisonSecs &&
           $page.markdownPage.comparisonSecs.length > 0
@@ -42,72 +44,52 @@
         :sections="$page.markdownPage.comparisonSecs"
       />
 
-      <CallToAction class="mt-20"
+      <CallToAction
+        class="mt-20"
         v-if="$page.markdownPage.whyCTA"
         :cta="$page.markdownPage.whyCTA"
       />
-
-      <g-image
-        class="m-auto"
-        v-if="$page.markdownPage.solution_image3"
-        :src="$page.markdownPage.solution_image3.src"
-      />
-
-      <BrandPanel
-        :brand="$page.markdownPage.brandPanel"
-        :id="$page.markdownPage.id"
-        v-if="$page.markdownPage.brandPanel"
-      />
-
-      <CallToAction
-        v-if="$page.markdownPage.cta2"
-        :cta="$page.markdownPage.cta2"
-      />
-
-      <g-image
-        class="m-auto w-1/2"
-        v-if="$page.markdownPage.solution_image4"
-        :src="$page.markdownPage.solution_image4.src"
-      />
-
-      <div class="container sm:pxi-0 mx-auto mt-8 overflow-x-hidden">
+      <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+        <BrandPanel
+          :brand="$page.markdownPage.brandPanel"
+          :id="$page.markdownPage.id"
+          v-if="$page.markdownPage.brandPanel"
+        />
         <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
           <AppListItem
             v-for="product in $page.markdownPage.productData"
             :key="product.id"
             :app="product"
           />
+
+          <g-image
+            class="m-auto px-6 py-4"
+            v-if="$page.markdownPage.solution_image2"
+            :src="$page.markdownPage.solution_image2.src"
+          />
+
+          <CallToAction
+            v-if="$page.markdownPage.cta"
+            :cta="$page.markdownPage.cta"
+          />
         </div>
       </div>
 
+      <CallToAction
+        v-if="$page.markdownPage.cta2"
+        :cta="$page.markdownPage.cta2"
+        :id="$page.markdownPage.cta2.id"
+      />
+
+      <CallToAction
+        v-if="$page.markdownPage.cta3"
+        :cta="$page.markdownPage.cta3"
+        :id="$page.markdownPage.cta3.id"
+      />
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
       /> -->
-
-      <g-image
-        class="m-auto px-6 py-4"
-        v-if="$page.markdownPage.solution_image2"
-        :src="$page.markdownPage.solution_image2.src"
-      />
-
-      <CallToAction
-        v-if="$page.markdownPage.cta"
-        :cta="$page.markdownPage.cta"
-      />
-    </div>
-    <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden py-5">
-      <CallToAction
-        v-if="$page.markdownPage.cta3"
-        :cta="$page.markdownPage.cta3"
-        :id="$page.markdownPage.id"
-      />
-
-      <g-image
-        class="m-auto"
-        v-if="$page.markdownPage.solution_image5"
-        :src="$page.markdownPage.solution_image5.src"
-      />
     </div>
   </Layout>
 </template>
@@ -125,8 +107,6 @@
         solution_image
         solution_image2
         solution_image3
-        solution_image4
-        solution_image5
         button
         link
        header{
@@ -189,6 +169,7 @@
           content
           button
           link
+          image
         }
         cta2 {
           id
@@ -196,6 +177,7 @@
           content
           button
           link
+          image
         }
         cta3 {
           id

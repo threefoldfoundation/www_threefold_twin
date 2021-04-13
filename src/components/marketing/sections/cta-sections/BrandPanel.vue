@@ -8,7 +8,7 @@
       >
         <div class="relative pb-3/5 -mt-6 md:pb-1/2">
           <g-image
-            class="absolute brandpanel inset-0 w-full h-full translate-x-0 translate-y-center rounded-md object-fill object-left-top sm:translate-x-0 lg:translate-y-20"
+            class="absolute pt-5 inset-0 w-full h-full translate-x-0 translate-y-center rounded-md object-fill object-left-top sm:translate-x-0 lg:translate-y-20"
             :src="image"
             :alt="brand.title"
           />
