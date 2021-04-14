@@ -2,7 +2,7 @@
 id: life_cta
 title: Get Your Digital Twin for Life Now!
 button: Get the Early Bird Offer! #Button was Get Your DT
-link: "" #Add button link here
+link: /dt_for_life #Add button link here
 image: ./life_now_big.jpg
 ---
 
