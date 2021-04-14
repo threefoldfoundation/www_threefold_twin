@@ -12,7 +12,7 @@
           <a :href="$url('/')" class="flex">
             <g-image
               :src="require(`!!assets-loader!@images/twin_logo.svg`)"
-              class="mr-3 fill-current logo"
+              class="mr-8 fill-current logo"
               width="180"
               v-if="theme == 'light'"
               alt=""
@@ -155,14 +155,14 @@
             :href="element.link"
             @click="clicked"
             target="_blank"
-            class="inline-flex sm:flex uppercase p-2 mr-4 ml-4 animated-link"
+            class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
             >{{ element.name }}</a
           >
           <g-link
             v-else
             :to="element.link"
             @click="clicked"
-            class="inline-flex sm:flex uppercase p-2 mr-4 ml-4 animated-link"
+            class="inline-flex sm:flex uppercase p-2 mr-4 animated-link"
             >{{ element.name }}</g-link
           >
         </div>
