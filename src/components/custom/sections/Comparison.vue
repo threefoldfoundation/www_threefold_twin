@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 md:mt-20 px-4 text-center advantage" v-if="id == 'why'">
+  <section class="py-12 md:mt-20 text-center advantage" v-if="id == 'why'">
     <h2
       class="text-4xl mb-2 leading-tight font-semibold font-heading"
       v-if="main.title"
@@ -14,7 +14,7 @@
       ></div>
       <div class="flex flex-wrap items-center mx-8 mt-12 mb-2">
         <div
-          class="lg:w-1/3 px-6 mb-2"
+          class="lg:w-1/3 px-6 mb-8"
           v-for="(section, index) in sections"
           :key="index"
         >

@@ -12,7 +12,7 @@
           <a :href="$url('/')" class="flex">
             <g-image
               :src="require(`!!assets-loader!@images/twin_logo.svg`)"
-              class="mr-3 fill-current logo"
+              class="mr-8 fill-current logo"
               width="180"
               v-if="theme == 'light'"
               alt=""

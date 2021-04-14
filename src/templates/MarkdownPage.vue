@@ -61,18 +61,17 @@
             :key="product.id"
             :app="product"
           />
-
-          <g-image
-            class="m-auto px-6 py-4"
-            v-if="$page.markdownPage.solution_image2"
-            :src="$page.markdownPage.solution_image2.src"
-          />
-
-          <CallToAction
-            v-if="$page.markdownPage.cta"
-            :cta="$page.markdownPage.cta"
-          />
         </div>
+        <g-image
+          class="m-auto px-6 py-4"
+          v-if="$page.markdownPage.solution_image2"
+          :src="$page.markdownPage.solution_image2.src"
+        />
+
+        <CallToAction
+          v-if="$page.markdownPage.cta"
+          :cta="$page.markdownPage.cta"
+        />
       </div>
 
       <CallToAction
@@ -82,6 +81,7 @@
       />
 
       <CallToAction
+        class="mt-10"
         v-if="$page.markdownPage.cta3"
         :cta="$page.markdownPage.cta3"
         :id="$page.markdownPage.cta3.id"
