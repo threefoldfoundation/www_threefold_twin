@@ -100,6 +100,9 @@
         id
         path
         excerpt
+        title
+        metaTitle
+        metaContent
         header_excerpt
         header_altImg
         header_title
@@ -240,6 +243,28 @@ export default {
   metaInfo() {
     return {
       title: this.$page.markdownPage.title,
+      meta: [
+        {
+          key: "og:title",
+          name: "og:title",
+          content: this.$page.markdownPage.metaTitle,
+        },
+        {
+          key: "og:description",
+          name: "og:description",
+          content: this.$page.markdownPage.metaContent,
+        },
+        {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: this.$page.markdownPage.metaTitle,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: this.$page.markdownPage.metaContent,
+        },
+      ],
     };
   },
 };

@@ -3,11 +3,12 @@
 
 <head>
     ${head}
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="82cd4c77-6fec-46cc-bd86-57daff0b69e2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "82cd4c77-6fec-46cc-bd86-57daff0b69e2"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
 </head>
 
 <body ${bodyAttrs}>
-    <!-- <script>
+    <script>
         // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
         // for this starter, i used the code from gridsome.org
         (function() {
@@ -42,7 +43,7 @@
 
             setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
         })();
-    </script> -->
+    </script>
 
     ${app} ${scripts}
 </body>

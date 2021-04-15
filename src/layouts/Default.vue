@@ -29,32 +29,6 @@ export default {
       this.theme = mode;
     },
   },
-  metaInfo() {
-    return {
-      meta: [
-        {
-          key: "og:title",
-          name: "og:title",
-          content: this.$static.metadata.siteName,
-        },
-        {
-          key: "og:description",
-          name: "og:description",
-          content: this.$static.metadata.siteDescription,
-        },
-        {
-          key: "twitter:title",
-          name: "twitter:title",
-          content: this.$static.metadata.siteName,
-        },
-        {
-          key: "twitter:description",
-          name: "twitter:description",
-          content: this.$static.metadata.siteDescription,
-        },
-      ],
-    };
-  },
 };
 </script>
 <static-query>

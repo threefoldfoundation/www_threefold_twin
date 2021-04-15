@@ -1,5 +1,8 @@
 ---
 id: why
+title: Why
+metaTitle: meta title
+metaContent: test
 header_title: The Power of P2P
 header_image: ./why_header.jpg
 header_altImg: digitaltwin
