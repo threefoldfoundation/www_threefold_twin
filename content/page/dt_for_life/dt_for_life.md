@@ -1,9 +1,13 @@
 ---
 id: dt_for_life
-header_title: A lifetime of digital freedom for just $100
+header_title: A lifetime of digital freedom for just 1000 TFTs
 header_image: ./dt_for_life.png
 header_altImg: digitaltwin_for_life
-header_excerpt: The Digital Twin will be available soon.  Join the thousands of early adopters who have already registered to be the first to access a growing number of secure applications for life!
-button: Coming Soon!  #Get Lifetime Access Now
-link: '' #link for button
+header_excerpt: Digital Twin will be available soon. Become an early adopter and one of the first to access a growing number of secure and private applications for life!
+button: Buy TFT
+link: https://info.mydigitaltwin.io/#/twin__how_to_get_tft
 ---
+
+<!-- 
+button2: Learn More
+link2: https://info.mydigitaltwin.io/#/twin__get_your_dt_home -->
