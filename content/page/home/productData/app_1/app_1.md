@@ -1,6 +1,6 @@
 ---
 id: app_1
 title: ''
-image : ./meet.svg
+image : ./meet.png
 url : /meet
 ---

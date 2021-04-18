@@ -1,6 +1,6 @@
 ---
 id: app_2
 title: ''
-image : ./filestorage.svg
+image : ./filestorage.png
 url : /filestorage
 ---
