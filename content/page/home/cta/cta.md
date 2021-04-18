@@ -1,13 +1,9 @@
 ---
 id: home_cta
 title: ''
-button: '' #Button was Get Your DT
-link: '' #Add button link here
+button: Reserve your DT 
+link: /dt_for_life 
 ---
 
 <!-- **Early bird offer coming soon!** -->
-**EARLY BIRD OFFER COMING SOON!**
-
-<br/>
-
-Our first users will pay a small price once and get to enjoy the power of the Digital Twin **FOREVER**.
+**RESERVE YOUR DIGITAL TWIN FOR LIFE NOW!**
