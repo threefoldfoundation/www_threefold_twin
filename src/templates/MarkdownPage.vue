@@ -2,13 +2,16 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-        <Header
+       <Header
+          :id="$page.markdownPage.id"
           :title="$page.markdownPage.header_title"
           :image="$page.markdownPage.header_image"
           :altImg="$page.markdownPage.header_altImg"
           :content="$page.markdownPage.header_excerpt"
           :button="$page.markdownPage.button"
-          :link="$url($page.markdownPage.link)"
+          :link="$page.markdownPage.link"
+          :button2="$page.markdownPage.button2"
+          :link2="$page.markdownPage.link2"
         />
 
         <SignUp
@@ -112,6 +115,8 @@
         solution_image3
         button
         link
+        button2
+        link2
        header{
          title
          subtitle

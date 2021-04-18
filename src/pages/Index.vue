@@ -2,6 +2,7 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container mx-auto">
       <Header
+        :id="$page.markdownPage.id"
         :title="$page.markdownPage.header_title"
         :image="$page.markdownPage.header_image"
         :altImg="$page.markdownPage.header_altImg"
