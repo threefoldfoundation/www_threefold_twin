@@ -111,6 +111,7 @@ navLinks:
         external: true
       - title: Contact Us
         path: 'mailto:info@mydigitaltwin.com'
+        external: true
 
 social:
   - icon: telegram-plane
