@@ -2,7 +2,7 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-       <Header
+       <Header v-if="header"
           :id="$page.markdownPage.id"
           :title="$page.markdownPage.header_title"
           :image="$page.markdownPage.header_image"
@@ -14,13 +14,8 @@
           :link2="$page.markdownPage.link2"
         />
 
-        <SignUp
-          v-if="$page.markdownPage.signup"
-          :signup="$page.markdownPage.signup"
-        />
-
         <g-image
-          class="m-auto"
+          class="m-auto my-0"
           v-if="$page.markdownPage.solution_image"
           :src="$page.markdownPage.solution_image.src"
         />
@@ -75,6 +70,12 @@
           v-if="$page.markdownPage.cta"
           :cta="$page.markdownPage.cta"
         />
+
+
+         <SignUp
+          v-if="$page.markdownPage.signup"
+          :signup="$page.markdownPage.signup"
+        />
       </div>
 
       <CallToAction
@@ -89,6 +90,8 @@
         :cta="$page.markdownPage.cta3"
         :id="$page.markdownPage.cta3.id"
       />
+
+
       <!-- <logoShowcase
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
