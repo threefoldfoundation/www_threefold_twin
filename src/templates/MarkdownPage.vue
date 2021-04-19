@@ -2,7 +2,7 @@
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden py-5">
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
-       <Header v-if="header"
+       <Header
           :id="$page.markdownPage.id"
           :title="$page.markdownPage.header_title"
           :image="$page.markdownPage.header_image"
