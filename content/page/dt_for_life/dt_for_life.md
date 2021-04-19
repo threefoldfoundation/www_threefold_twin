@@ -1,5 +1,8 @@
 ---
 id: dt_for_life
+metaTitle: Digital Twin | For Life
+metaDesc: A lifetime of digital freedom for just USD 100.
+metaImg: ./dt_for_life.png
 header_title: A lifetime of digital freedom for just 1000 TFTs
 header_image: ./dt_for_life.png
 header_altImg: digitaltwin_for_life

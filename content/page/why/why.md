@@ -1,8 +1,9 @@
 ---
 id: why
 title: Why
-metaTitle: meta title
-metaContent: test
+metaTitle: Digital Twin | The Power of P2P
+metaDesc:  Today, online privacy and security are badly compromised. Peer-to-peer models empower communities with equality, sovereignty, and resiliency.
+metaImg: ./why_header.jpg
 header_title: The Power of P2P
 header_image: ./why_header.jpg
 header_altImg: digitaltwin

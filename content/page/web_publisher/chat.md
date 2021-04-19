@@ -1,5 +1,8 @@
 ---
 id: web_publisher
+metaTitle: Digital Twin | Web Publisher
+metaDesc:  Express yourself to millions while allowing yourself the pleasure of fully owning every word.
+metaImg: ./dt_web_publisher.png
 signup: web_publisher_signup
 solution_image: ./dt_web_publisher.png
 productsMain: web_publisher_features

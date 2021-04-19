@@ -1,5 +1,8 @@
 ---
 id: meet
+metaTitle: Digital Twin | Meet
+metaDesc: Achieve end-to-end encryption like never before with the first P2P video calling application.
+metaImg: ./dt_meet.png
 signup: video_calls_signup
 solution_image: ./dt_meet.png
 productsMain: meet_features

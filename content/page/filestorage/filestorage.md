@@ -1,5 +1,8 @@
 ---
 id: filestorage
+metaTitle: Digital Twin | File Storage
+metaDesc: Rest assured that all your documents and files are stored in a truly decentralized space, allowing an unprecedented amount of security.
+metaImg: ./dt_filestorage.png
 signup: filestorage_signup
 solution_image: ./dt_filestorage.png
 productsMain: filestorage_features

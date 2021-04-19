@@ -1,5 +1,8 @@
 ---
 id: payments
+metaTitle: Digital Twin | Payments
+metaDesc: Transact using the power of a peer-to-peer grid which gives an added level of security whilst maintaining the utmost level of privacy.
+metaImg: ./dt_payments.png
 signup: payments_signup
 solution_image: ./dt_payments.png
 productsMain: payments_features

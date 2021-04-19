@@ -1,5 +1,8 @@
 ---
 id: home
+metaTitle: Digital Twin | Own Your Data
+metaDesc: The Digital Twin assures that only you own your data, and no one else. Access numerous applications while forever remaining fully secure and private.
+metaImg: ./header.png
 header_title: Finally you can be fully private and secure!
 header_image: ./header.png
 header_altImg: digitaltwin

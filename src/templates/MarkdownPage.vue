@@ -108,7 +108,8 @@
         excerpt
         title
         metaTitle
-        metaContent
+        metaDesc
+        metaImg
         header_excerpt
         header_altImg
         header_title
@@ -248,29 +249,60 @@ export default {
     BrandPanel,
   },
 
+ computed: {
+    getImg() {
+      let image = "";
+      if (process.isClient) {
+        image = `${window.location.origin}${this.img}`;
+      }
+      return image;
+    },
+    img() {
+      if (!this.$page.markdownPage.metaImg) return "";
+      if (this.$page.markdownPage.metaImg.src)
+        return this.$page.markdownPage.metaImg.src;
+      return this.$page.markdownPage.metaImg;
+    },
+  },
   metaInfo() {
     return {
-      title: this.$page.markdownPage.title,
+      title: "",
+      titleTemplate: this.$page.markdownPage.metaTitle,
       meta: [
         {
+          key: "description",
+          name: "description",
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
           key: "og:title",
-          name: "og:title",
+          property: "og:title",
           content: this.$page.markdownPage.metaTitle,
         },
         {
           key: "og:description",
-          name: "og:description",
-          content: this.$page.markdownPage.metaContent,
+          property: "og:description",
+          content: this.$page.markdownPage.metaDesc,
         },
         {
-          key: "twitter:title",
-          name: "twitter:title",
-          content: this.$page.markdownPage.metaTitle,
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
         },
         {
           key: "twitter:description",
           name: "twitter:description",
-          content: this.$page.markdownPage.metaContent,
+          content: this.$page.markdownPage.metaDesc,
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: this.$page.markdownPage.metaTitle,
         },
       ],
     };

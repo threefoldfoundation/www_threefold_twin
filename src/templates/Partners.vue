@@ -69,7 +69,10 @@ query($page: Int){
       }
     }
   }
-  
+      markdownPage(id: "home") {
+        id
+        metaImg
+  }
   tags: allProjectTag (filter: { title: {in: ["blockchain", "experience", "technology", "farming", "community", "infrastructure", "impact"]}}) {
      edges{
       node{
@@ -100,7 +103,48 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.pageName,
+      title: "",
+      titleTemplate: " Digital Twin | Partners",
+      meta: [
+        {
+          key: "description",
+          name: "description",
+          content:
+            "Meet the incredible organizations that make up the Digital Twin ecosystem.",
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: " Digital Twin | Partners",
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content:
+            "Meet the incredible organizations that make up the Digital Twin ecosystem.",
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content:
+            "Meet the incredible organizations that make up the Digital Twin ecosystem.",
+        },
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: this.getImg,
+        },
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: " Digital Twin | Partners",
+        },
+      ],
     };
   },
   methods: {
