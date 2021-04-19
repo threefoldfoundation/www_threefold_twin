@@ -1,4 +1,4 @@
-<template>
+4<template>
   <Layout :hideHeader="true" :disableScroll="true">
     <div class="container mx-auto">
       <Header
@@ -22,7 +22,7 @@
       /> -->
 
       <g-image
-        class="m-auto mt-16"
+        class="m-auto mt-16 md:w-1/2"
         v-if="$page.markdownPage.solution_image"
         :src="$page.markdownPage.solution_image.src"
       />
