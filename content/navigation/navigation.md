@@ -50,6 +50,8 @@ navLinks:
         path: /web_publisher
       - title: Payments
         path: /payments
+      - title: Social
+        path: /social
 
   - name: Participate
     link: ''
