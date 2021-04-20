@@ -1,11 +1,16 @@
 <template>
   <Layout :hideHeader="true" :disableScroll="true">
-    <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden py-5">
+    <div class="container-fluid sm:pxi-0 mx-auto overflow-x-hidden pb-5">
+      <DFLHeader
+        v-if="$page.markdownPage.id == 'dt_for_life'"
+        :sections="$page.markdownPage.dfl_header"
+      />
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
         <Header
           v-if="
             $page.markdownPage.header_title &&
-            $page.markdownPage.header_title != ''
+            $page.markdownPage.header_title != '' &&
+            $page.markdownPage.id !== 'dt_for_life'
           "
           :id="$page.markdownPage.id"
           :title="$page.markdownPage.header_title"
@@ -64,6 +69,15 @@
             :app="product"
           />
         </div>
+        <section
+          v-if="$page.markdownPage.productData.length > 0"
+          class="post-related text-gray-700 pt-10"
+        >
+          <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
+            <div>previousElement</div>
+            <div>next</div>
+          </div>
+        </section>
         <g-image
           class="m-auto px-6 py-4"
           v-if="$page.markdownPage.solution_image2"
@@ -217,6 +231,15 @@
          sourceUrl
          btnTxt
          image
+       } 
+       dfl_header {
+         id
+         title
+         image
+         subtitle
+         content
+         button
+         link
        }
     }
   }
@@ -226,6 +249,7 @@
 <script>
 import NewCard from "~/components/marketing/sections/cta-sections/NewCard.vue";
 import Header from "~/components/marketing/sections/cta-sections/Header.vue";
+import DFLHeader from "~/components/marketing/sections/cta-sections/dflHeader.vue";
 import VerticalNav from "~/components/custom/Navbar/VerticalNav.vue";
 import SolutionsHeader from "~/components/custom/sections/header/HeaderSection.vue";
 import ShowcaseProducts from "~/components/marketing/sections/cta-sections/ShowcaseProducts.vue";
@@ -249,6 +273,7 @@ export default {
     Comparison,
     AppListItem,
     BrandPanel,
+    DFLHeader,
   },
 
   computed: {

@@ -11,6 +11,7 @@ button: Buy TFT
 link: https://info.mydigitaltwin.io/#/twin__how_to_get_tft
 button2: Learn More
 link2: https://info.mydigitaltwin.io/#/twin__get_your_dt_home
+dfl_header: [get_one, reserve_multiple]
 ---
 
 <!-- 

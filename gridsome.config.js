@@ -200,6 +200,14 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                typeName: 'DFLHeader',
+                path: './content/page/**/header/**/*.md',
+            }
+        },
+
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 typeName: 'MarkdownPage',
                 path: './content/page/*/*.md',
                 refs: {
@@ -232,7 +240,8 @@ module.exports = {
                     plans: 'Plans',
                     inTheNews: 'InTheNews',
                     brandPanel: 'BrandPanel',
-                    allSlides: 'About'
+                    allSlides: 'About',
+                    dfl_header: 'DFLHeader'
                 }
             }
         },
