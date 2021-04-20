@@ -51,7 +51,7 @@
         v-if="$page.markdownPage.whyCTA"
         :cta="$page.markdownPage.whyCTA"
       />
-      <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
+      <div class="container sm:pxi-0 mx-auto overflow-x-hidden md:py-5">
         <BrandPanel
           :brand="$page.markdownPage.brandPanel"
           :id="$page.markdownPage.id"

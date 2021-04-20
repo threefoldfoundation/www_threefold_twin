@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="max-w-screen-xl mx-auto py-24">
+    <div class="max-w-screen-xl mx-auto md:py-10">
       <!-- why -->
       <div
         v-if="id == 'why'"
@@ -13,7 +13,7 @@
             :alt="brand.title"
           />
         </div>
-        <div class="px-6 sm:px-10 lg:pr-0 xl:px-15">
+        <div class="px-6 sm:px-10 lg:pr-0 xl:px-15 text-center lg:text-left">
           <div class="lg:self-center">
             <h2
               class="text-4xl mb-2 uppercase leading-tight font-semibold font-heading"
