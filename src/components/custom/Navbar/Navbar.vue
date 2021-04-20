@@ -7,7 +7,7 @@
         'opacity-0': !disableScroll && scrollPosition < headerHeight,
       }"
     >
-      <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+      <div class="flex items-center justify-between px-4 py-3 sm:p-0 w-full md:w-auto">
         <div class="inline-flex items-center flex-shrink-0">
           <a :href="$url('/')" class="flex">
             <g-image
