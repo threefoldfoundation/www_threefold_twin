@@ -1,5 +1,5 @@
 ---
 id: logo4
-image: ./cta.png
+image: ./tag.png
 url: /partners/take_action_global
 ---
