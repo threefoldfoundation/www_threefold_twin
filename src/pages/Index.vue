@@ -45,6 +45,11 @@
         v-if="$page.markdownPage.logos.length > 0"
         :logos="$page.markdownPage.logos"
       />
+
+      <Testimonials
+        v-if="$page.markdownPage.testimonialsSecs"
+        :sections="$page.markdownPage.testimonialsSecs"
+      />
     </div>
 
     <g-image
@@ -185,6 +190,12 @@
           title
           content
         }
+        testimonialsSecs{
+          id
+          image
+          content
+          url
+        }
         cta{
           id
           title
@@ -229,6 +240,7 @@ import Comparison from "~/components/custom/sections/Comparison.vue";
 import Comparison2 from "~/components/custom/sections/Comparison2.vue";
 import InTheNews from "~/components/marketing/sections/logo-clouds/off_white_grid.vue";
 import SignUp from "~/components/custom/sections/SignUp.vue";
+import Testimonials from "~/components/marketing/sections/cta-sections/Testimonials.vue";
 
 export default {
   components: {
@@ -242,8 +254,9 @@ export default {
     Comparison2,
     InTheNews,
     SignUp,
+    Testimonials,
   },
- computed: {
+  computed: {
     getImg() {
       let image = "";
       if (process.isClient) {
