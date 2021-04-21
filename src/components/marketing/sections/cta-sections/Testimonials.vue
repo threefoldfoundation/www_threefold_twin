@@ -13,7 +13,7 @@
         </div>
         <blockquote class="mt-8 md:flex-grow md:flex md:flex-col">
           <div
-            class="relative text-lg leading-7 font-medium text-gray-900 md:flex-grow"
+            class="relative text-lg leading-7 font-medium text-gray-700 md:flex-grow"
           >
             <svg
               class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-green-200"
@@ -31,18 +31,24 @@
               <div
                 class="flex-shrink-0 inline-flex rounded-full border-2 border-white"
               >
-                <img
+                <g-link :to="section.urlperson">
+                  <g-image
+                    class="h-12 w-12 rounded-full"
+                    :src="img(section.imageperson)"
+                  />
+                </g-link>
+                <!-- <img
                   class="h-12 w-12 rounded-full"
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
-                />
+                /> -->
               </div>
               <div class="ml-4">
                 <div class="text-base leading-6 font-medium text-gray-900">
-                  Judith Black
+                  {{ section.name }}
                 </div>
                 <div class="text-base leading-6 font-medium text-gray-900">
-                  CEO, Tuple
+                  {{ section.company }}
                 </div>
               </div>
             </div>
@@ -66,11 +72,8 @@ export default {
 };
 </script>
 <style scoped>
-
-blockquote{
-border-left-color: #c2f5c5 ;
-
+blockquote {
+  border-left-color: #c2f5c5;
 }
-
 </style>
 

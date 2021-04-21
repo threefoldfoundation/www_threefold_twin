@@ -1,7 +1,12 @@
 ---
 id: sec2
 image: ./tag.png
-url: /partners/hpe
+url: /partners/take_action_global
+name : Keon Timmers
+company : Director, TAG (koen_timmers)
+imageperson : ./koen_timmers.jpg
+urlperson : /people/koen_timmers/
+
 
 ---
 

@@ -195,6 +195,10 @@
           image
           content
           url
+          company
+          name
+          imageperson 
+          urlperson 
         }
         cta{
           id
