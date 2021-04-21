@@ -3,7 +3,7 @@ id: sec1
 image: ./solidaridad_logo.png
 url: /partners/solidaridad
 name : Jeroen Douglas
-company :  Executive Director, Solidaridad Network (jeroen_douglas)
+company :  Executive Director, Solidaridad Network 
 imageperson : ./jeroen_douglas.png
 urlperson : /people/jeroen_douglas/ 
 
