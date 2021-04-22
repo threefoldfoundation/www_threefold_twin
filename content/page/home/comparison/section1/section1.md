@@ -1,5 +1,6 @@
 ---
 id: section1
 svg: ./reliable.png
-title: ''
+title: 'RELIABLE'
 ---
+An architecture that guarantees the privacy of your data.
