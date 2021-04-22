@@ -73,11 +73,12 @@
           v-if="$page.markdownPage.productData.length > 0"
           class="post-related text-gray-700 pt-10"
         >
-          <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
+          <!-- <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
             <div>previousElement</div>
             <div>next</div>
-          </div>
+          </div> -->
         </section>
+
         <g-image
           class="m-auto px-6 py-4"
           v-if="$page.markdownPage.solution_image2"
