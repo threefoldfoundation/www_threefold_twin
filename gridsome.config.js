@@ -238,6 +238,8 @@ module.exports = {
                     signup: 'SignUp',
                     comparisonMain: 'ComparisonMain',
                     comparisonSecs: 'Comparison',
+                    comparisonMain3: 'ComparisonMain',
+                    comparisonSecs3: 'Comparison',
                     comparisonMain2: 'Comparison2',
                     comparisonSecs2: 'Comparison2',
                     testimonialsSecs :'Testimonials',

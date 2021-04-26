@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-5">
+  <section>
     <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
       <div
         v-for="(section, index) in sections"

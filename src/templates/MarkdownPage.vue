@@ -5,6 +5,15 @@
         v-if="$page.markdownPage.id == 'dt_for_life'"
         :sections="$page.markdownPage.dfl_header"
       />
+       <Comparison
+        v-if="
+          $page.markdownPage.comparisonSecs3 &&
+          $page.markdownPage.comparisonSecs3.length > 0
+        "
+        :id="$page.markdownPage.id"
+        :main="$page.markdownPage.comparisonMain3"
+        :sections="$page.markdownPage.comparisonSecs3"
+      />
       <div class="container sm:pxi-0 mx-auto overflow-x-hidden py-5">
         <Header
           v-if="
@@ -180,6 +189,21 @@
           svg
           title
           content
+        }
+        comparisonMain3{
+          id
+          title
+          content
+          button
+          link
+        }
+        comparisonSecs3{
+          id
+          svg
+          title
+          content
+          button
+          link
         }
         logos{
           id
