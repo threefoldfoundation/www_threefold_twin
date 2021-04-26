@@ -74,11 +74,11 @@
 
       <Comparison
         v-if="
-          $page.markdownPage.comparisonSecs &&
-          $page.markdownPage.comparisonSecs.length > 0
+          $page.markdownPage.homeComparisonSecs &&
+          $page.markdownPage.homeComparisonSecs.length > 0
         "
-        :main="$page.markdownPage.comparisonMain"
-        :sections="$page.markdownPage.comparisonSecs"
+        :main="$page.markdownPage.homeComparisonMain"
+        :sections="$page.markdownPage.homeComparisonSecs"
       />
 
       <g-image
@@ -164,14 +164,14 @@
           order
           content
         }
-        comparisonMain{
+        homeComparisonMain{
           id
           title
           content
           button
           link
         }
-        comparisonSecs{
+        homeComparisonSecs{
           id
           svg
           title
@@ -259,6 +259,9 @@ export default {
     InTheNews,
     SignUp,
     Testimonials,
+  },
+  mounted() {
+    console.log(this.$page.markdownPage.comparisonMain);
   },
   computed: {
     getImg() {

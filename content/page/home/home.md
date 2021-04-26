@@ -20,8 +20,8 @@ solution_image2: ./manipulation_cost.png
 comparisonMain2: comparison2
 comparisonSecs2: [sec1, sec2, sec3, sec4, sec5]
 testimonialsSecs : [sec1, sec2,]
-comparisonMain: comparison
-comparisonSecs: [section1, section2, section3]
+homeComparisonMain: comparison
+homeComparisonSecs: [section1, section2, section3]
 solution_image3: ./pay_once.png
 solution_image4: ./roadmap_mobile.png
 cta: home_cta

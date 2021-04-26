@@ -58,14 +58,14 @@
         <!-- <g-link :to="section.link"> -->
         <g-image class="mx-auto" :src="section.svg.src" :alt="section.title" />
         <div class="part2 py-1">
-          <h3 class="text-xl mb-4 mx-4 font-medium font-semibold">
+          <h3 class="text-xl mb-4 mx-4 font-semibold md:h-20">
             <!-- <span
             class="inline-flex items-center justify-center h-12 w-12 mr-2 border rounded-full"
             >{{ index + 1 }}</span
           > -->
             {{ section.title }}
           </h3>
-          <div class="mb-4 px-5 text-black-700 md:h-24" v-html="section.content"></div>
+          <div class="mb-4 px-5 text-black-700 md:h-32" v-html="section.content"></div>
           <div class="py-6" v-if="section.button">
             <a
               v-if="section.link.includes('http')"
@@ -164,7 +164,7 @@ export default {
 }
 
 .part2 {
-  height: 300px;
+  height: 350px;
   background-color: #ebfffe;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;

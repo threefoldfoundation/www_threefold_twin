@@ -242,6 +242,8 @@ module.exports = {
                     comparisonSecs3: 'Comparison',
                     comparisonMain2: 'Comparison2',
                     comparisonSecs2: 'Comparison2',
+                    homeComparisonMain: 'ComparisonMain',
+                    homeComparisonSecs: 'Comparison',
                     testimonialsSecs :'Testimonials',
                     howItWorksMain_2: 'HowItWorks_2',
                     howItWorks_2: 'HowItWorks_2',

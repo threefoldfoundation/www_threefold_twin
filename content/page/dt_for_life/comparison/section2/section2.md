@@ -1,5 +1,5 @@
 ---
-id: section2
+id: dlsection2
 svg: ./get_tft.png
 title: Get your TFT's to reserve your Digital Twin for Life
 button : Buy TFT

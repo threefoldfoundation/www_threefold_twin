@@ -1,5 +1,5 @@
 ---
-id: section1
+id: dlsection1
 svg: ./download.png
 title: 'Download the ThreeFold Connect App'
 button : Get TF Connect

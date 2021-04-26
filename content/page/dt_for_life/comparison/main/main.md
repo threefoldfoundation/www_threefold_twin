@@ -1,5 +1,5 @@
 ---
-id: comparison
+id: dlcomparison
 title: How to get Your own Digital Twin
 button: "" #Secure Yourself
 link: "" #add button link here
