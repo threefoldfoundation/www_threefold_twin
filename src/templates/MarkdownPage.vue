@@ -5,7 +5,7 @@
         v-if="$page.markdownPage.id == 'dt_for_life'"
         :sections="$page.markdownPage.dfl_header"
       />
-       <Comparison
+      <Comparison
         v-if="
           $page.markdownPage.comparisonSecs3 &&
           $page.markdownPage.comparisonSecs3.length > 0
@@ -65,7 +65,12 @@
         v-if="$page.markdownPage.whyCTA"
         :cta="$page.markdownPage.whyCTA"
       />
-      <div class="container sm:pxi-0 mx-auto overflow-x-hidden md:py-5">
+      <div
+        class="container sm:pxi-0 mx-auto overflow-x-hidden md:py-5"
+        v-if="
+          $page.markdownPage.id !== 'dt_for_life'
+        "
+      >
         <BrandPanel
           :brand="$page.markdownPage.brandPanel"
           :id="$page.markdownPage.id"
