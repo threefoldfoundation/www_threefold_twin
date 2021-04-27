@@ -7,6 +7,7 @@ signup: network_signup
 solution_image: ./dt_network.png
 productsMain: network_features
 productData: [network_1, network_2, network_3, network_4, network_5]
+header: network_navigation
 solution_image2: ./pay_once_benefit.png
 cta: network_cta
 ---

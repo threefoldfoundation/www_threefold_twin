@@ -38,11 +38,6 @@
           :src="$page.markdownPage.solution_image.src"
         />
 
-        <!-- <SolutionsHeader
-        v-if="$page.markdownPage.header"
-        :header="$page.markdownPage.header"
-      /> -->
-
         <!-- <NewCard
         v-for="card in $page.markdownPage.cards"
         :key="card.id"
@@ -76,6 +71,7 @@
           :id="$page.markdownPage.id"
           v-if="$page.markdownPage.brandPanel"
         />
+
         <div class="flex flex-wrap with-large pt-8 pb-8 mx-4 sm:-mx-4">
           <AppListItem
             v-for="product in $page.markdownPage.productData"
@@ -83,15 +79,21 @@
             :app="product"
           />
         </div>
+
         <section
           v-if="$page.markdownPage.productData.length > 0"
-          class="post-related text-gray-700 pt-10"
-        >
+          <!-- class="post-related text-gray-700 pt-10" 
+        > -->
           <!-- <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
             <div>previousElement</div>
             <div>next</div>
           </div> -->
         </section>
+
+        <SolutionsHeader
+          v-if="$page.markdownPage.header"
+          :header="$page.markdownPage.header"
+        />
 
         <g-image
           class="m-auto px-6 py-4"
