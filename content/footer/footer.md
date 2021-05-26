@@ -10,7 +10,7 @@ youtube: '#'
 github: '#'
 telegram: https://t.me/joinchat/JnJfqY9tfAU1NTY0
 items:
-  - title: Universe
+  - title: TF Universe
     links:
     - name: ThreeFold
       link: https://threefold.io
