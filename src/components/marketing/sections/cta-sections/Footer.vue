@@ -8,20 +8,20 @@
       <div class="xl:grid xl:grid-cols-4 xl:gap-2">
         <div class="space-y-8 xl:col-span-1">
           <g-image
-            class="h-10"
+            class="w-10"
             :src="require(`!!assets-loader!@images/twin_icon.svg`)"
             alt="Company name"
             v-if="theme == 'light'"
           />
 
           <g-image
-            class="h-10"
+            class="w-10"
             :src="require(`!!assets-loader!@images/twin_icon.svg`)"
             alt="Company name"
             v-else
           />
 
-          <p class="text-gray-500 text-base text-center leading-6">
+          <p class="text-gray-500 text-base leading-6">
             {{ record.description }}
           </p>
           <div class="flex space-x-6">
