@@ -50,10 +50,9 @@ query {
         external
       }
     }
-    social{
-      icon
-      link
-    }
+    # social{
+      #icon
+      #}
   }
 
   footer(id: "footer"){

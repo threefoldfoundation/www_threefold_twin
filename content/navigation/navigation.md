@@ -1,32 +1,6 @@
 ---
 id: navigation
 navLinks:
-  - name: TF Universe
-    link: ''
-    external: false
-    expandable: true
-    submenu:
-      - title: ThreeFold
-        path: https://threefold.io/
-        external: true 
-      - title: ThreeFold Token
-        path: https://threefold.io/token
-        external: true 
-      - title: ThreeFold Grid
-        path: https://threefold.io/farming/tech
-        external: true 
-      - title: P2P Cloud
-        path: https://threefold.io/cloud
-        external: true 
-      - title: P2P Marketplace
-        path: https://threefold.io/marketplace
-        external: true 
-      - title: Conscious Internet
-        path: https://threefold.io/aci
-        external: true 
-      - title: ThreeFold Tech
-        path: https://threefold.tech/
-        external: true 
 
   - name: Why
     link: /why
@@ -69,7 +43,7 @@ navLinks:
         path: https://mydigitaltwin.io/info/twin#/twin__getting_started
         external: true 
 
-  - name: Learn
+  - name: More Info
     link: ''
     external: false
     expandable: true
@@ -95,31 +69,38 @@ navLinks:
       - title: About the tech
         path: https://info.mydigitaltwin.io/#/twin__howdoesitwork
         external: true
- 
-  - name: About Us
+
+
+  - name: ThreeFold
     link: ''
     external: false
     expandable: true
-    submenu:
-      - title: Blog
-        path: /blog
-      - title: NewsRoom
-        path: /news
-      - title: Partners
-        path: /partners     
-      - title: Forum
-        path: https://forum.mydigitaltwin.io/
+    submenu:     
+      - title: ThreeFold Home
+        path: https://threefold.io
+        external: true    
+      - title: Tokens
+        path: https://threefold.io/token
         external: true
-      - title: Join Community
-        path: https://t.me/joinchat/JnJfqY9tfAU1NTY0
+      - title: Farming
+        path: https://threefold.io/farming
         external: true
-      - title: Contact Us
-        path: 'mailto:info@mydigitaltwin.com'
+      - title: Cloud
+        path: https://cloud.threefold.io
         external: true
+      - title: Digital Twin
+        path: https://mydigitaltwin.io/
+        external: true
+      - title: Conscious Internet
+        path: https://threefold.io/aci
+        external: true        
+      - title: Developers (SDK)
+        path: https://sdk.threefold.io/
+        external: true
+      - title: Explorer
+        path: https://explorer.threefold.io/
+        external: true     
 
-social:
-  - icon: telegram-plane
-    link: https://t.me/joinchat/JnJfqY9tfAU1NTY0
 ---
 
 <!--

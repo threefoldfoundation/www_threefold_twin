@@ -49,7 +49,7 @@
                 @click="setActive(0)"
                 class="flex flex-row items-center w-full md:w-auto md:inline md:mt-0 md:ml-4 animated-link"
               >
-                <span class="capitalize">{{ topic }}</span>
+                <span class="capitalize">{{ topic.replace(/_/g, " ") }}</span>
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -89,7 +89,7 @@
                       setTopic(topic);
                       open = false;
                     "
-                    >{{ topic }}</a
+                    >{{ topic.replace(/_/g, " ") }}</a
                   >
                 </div>
               </div>

@@ -1,88 +1,84 @@
 ---
 id: footer
-description: DIGITAL TWIN
-linkedin: '#' #replace # with a link 
-facebook: '#'
-twitter: '#'
+description: THREEFOLD
+linkedin: 'https://www.linkedin.com/company/threefold-foundation/'
+facebook: 'https://www.facebook.com/threefold.io'
+twitter: 'https://twitter.com/threefold_io'
 dribbble: '#'
 instagram: '#'
-youtube: '#'
-github: '#'
-telegram: https://t.me/joinchat/JnJfqY9tfAU1NTY0
+youtube: 'https://www.youtube.com/threefoldfoundation'
+github: 'https://github.com/threefoldfoundation'
+telegram: 'https://t.me/threefoldnews'
 items:
-  - title: TF Universe
-    links:
-    - name: ThreeFold
-      link: https://threefold.io
-      external: true
+ - title: Threefold Universe
+   links:
     - name: ThreeFold Token
-      link: https://threefold.io/token
-      external: true
-    - name: ThreeFold Grid
-      link: https://threefold.io/farming/tech
-      external: true
-    - name: P2P Cloud
+      link: /token
+    - name: ThreeFold Farming
+      link: https://threefold.io/farming
+    - name: ThreeFold Cloud
       link: https://threefold.io/cloud
-      external: true
-    - name: P2P Marketplace
+    - name: Grid Explorer
+      link: https://explorer.threefold.io/      
+    - name: ThreeFold Marketplace
       link: https://threefold.io/marketplace
-      external: true
-    - name: Conscious Internet
+    - name: Digital Twin
+      link: https://mydigitaltwin.io
+    - name: Alliance
       link: https://threefold.io/aci
-      external: true
-    - name: ThreeFold Tech
-      link: https://www.threefold.tech
-      external: true
 
-  - title: Participate
-    links:
-    - name: Digital Twin for Life
-      link: /dt_for_life
-    - name: Buy TFT
-      link: https://mydigitaltwin.io/info/twin#/twin__how_to_get_tft
-      external: true
-    - name: Get Started
-      link: https://mydigitaltwin.io/info/twin#/twin__getting_started
-      external: true
-  
-  - title: Learn
-    links:
-    - name: What is Digital Twin?
-      link: https://info.mydigitaltwin.io
-      external: true
-    - name: What is P2P?
-      link: https://info.mydigitaltwin.io/#/twin__power_of_p2p
-      external: true
-    - name: Digital Twin Vision
-      link: https://info.mydigitaltwin.io/#/twin__our_vision
-      external: true
-    - name: Benefits of Digital Twin
-      link: https://info.mydigitaltwin.io/#/twin__benefits
-      external: true
-    - name: Get Started
-      link: https://info.mydigitaltwin.io/#/twin__getting_started
-      external: true
-    - name: Pricing
-      link: https://info.mydigitaltwin.io/#/twin__price
-      external: true
-    - name: About the tech
-      link: https://info.mydigitaltwin.io/#/twin__howdoesitwork
-      external: true
-      
-  - title: About Us
-    links:
+        
+ - title: Participate
+   links:
+    - name: Start Farming
+      link: https://threefold.io/farming/get_3node
+    - name: Buy the Token
+      link: https://threefold.io/info/threefold#/threefold__how_to_buy_and_sell
+    - name: Test the Cloud
+      link: https://threefold.io/cloud
+    - name: Develop with the SDK (advanced)
+      link: https://threefold.io/info/sdk
+    - name: Testing Community
+      link: https://t.me/joinchat/BwOvOxxgK59GmRoZ2_sM0w
+ 
+ - title: Knowledgebase
+   links:
+    - name: ThreeFold Grid
+      link: https://threefold.io/info/threefold#/threefold__grid_home
+    - name: ThreeFold Technology
+      link: https://threefold.io/info/threefold#/internet4__technology
+    - name: ThreeFold Farming
+      link: https://threefold.io/info/threefold#/threefold__farming_intro
+    - name: ThreeFold Token
+      link: https://threefold.io/info/threefold#/threefold__token_home
+    - name: Carbon Double Win
+      link: https://threefold.io/info/threefold#/threefold__energy_savings
+    - name: Manuals
+      link: https://threefold.io/info/threefold#/threefold__wiki_overview
+    - name: Releases
+      link: https://threefold.io/info/threefold#/threefold__release_mgmt
+    - name: ThreeFold Glossary
+      link: https://threefold.io/info/threefold#/threefold__defs
+
+ - title: About Us
+   links:
+    - name: ThreeFold
+      link: https://threefold.io/info/threefold
+    - name: Partners
+      link: /partners
+    - name: People
+      link: /people
     - name: Blog
       link: /blog
     - name: NewsRoom
       link: /news
-    - name: Partners
-      link: /partners
     - name: Forum
-      link: https://forum.mydigitaltwin.io/
-      external: true
-    - name: Join Community
-      link: https://t.me/joinchat/JnJfqY9tfAU1NTY0
-      external: true
+      link: https://forum.threefold.io/
     - name: Contact Us
-      link: 'mailto:info@mydigitaltwin.com'
+      link: 'mailto:info@threefold.io'
 ---
+
+[Terms & Conditions](https://threefold.io/info/legal#/legal__terms_conditions_websites) | [Privacy Policy](https://threefold.io/info/legal#/legal__privacypolicy) | [Impressum]()
+
+<br/>
+&#xA9; 2021 ThreeFold, All rights reserved.
