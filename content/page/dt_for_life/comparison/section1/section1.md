@@ -3,7 +3,7 @@ id: dlsection1
 svg: ./download.png
 title: 'Download the ThreeFold Connect App'
 button: Get TF Connect
-link: https://info.mydigitaltwin.io/#/twin__threefold_connect
+link: https://library.threefold.me/info/digitaltwin/#/twin__threefold_connect
 
 ---
 The ThreeFold Connect is a 2-Step Verification to protect your account with both your password and your phone.

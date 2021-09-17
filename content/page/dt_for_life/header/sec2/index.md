@@ -4,7 +4,7 @@ title: Reserve Multiple
 image: ./reserv_multiple.png
 subtitle: Digital freedom - a great gift to your loved ones
 button: '' # Reserve Multiple Twins
-link: '' # https://info.mydigitaltwin.io/#/twin__get_your_dt_home
+link: '' # https://library.threefold.me/info/digitaltwin/#/twin__get_your_dt_home
 ---
 
 **The Digital Twin will be available soon.**

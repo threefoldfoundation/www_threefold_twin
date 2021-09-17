@@ -49,25 +49,25 @@ navLinks:
     expandable: true
     submenu:
       - title: What is Digital Twin?
-        path: https://info.mydigitaltwin.io/#/
+        path: https://library.threefold.me/info/digitaltwin/#/
         external: true
       - title: What is P2P?
-        path: https://info.mydigitaltwin.io/#/twin__power_of_p2p
+        path: https://library.threefold.me/info/digitaltwin/#/twin__power_of_p2p
         external: true
       - title: Digital Twin Vision
-        path: https://info.mydigitaltwin.io/#/twin__our_vision
+        path: https://library.threefold.me/info/digitaltwin/#/twin__our_vision
         external: true
       - title: Benefits of Digital Twin
-        path: https://info.mydigitaltwin.io/#/twin__benefits
+        path: https://library.threefold.me/info/digitaltwin/#/twin__benefits
         external: true
       - title: Get Started
-        path: https://info.mydigitaltwin.io/#/twin__getting_started
+        path: https://library.threefold.me/info/digitaltwin/#/twin__getting_started
         external: true
       - title: Pricing
-        path: https://info.mydigitaltwin.io/#/twin__price
+        path: https://library.threefold.me/info/digitaltwin/#/twin__price
         external: true
       - title: About the tech
-        path: https://info.mydigitaltwin.io/#/twin__howdoesitwork
+        path: https://library.threefold.me/info/digitaltwin/#/twin__howdoesitwork
         external: true
 
 
@@ -95,7 +95,7 @@ navLinks:
         path: https://threefold.io/aci
         external: true        
       - title: Developers (SDK)
-        path: https://sdk.threefold.io/
+        path: https://library.threefold.me/info/sdk/
         external: true
       - title: Explorer
         path: https://explorer.threefold.io/
